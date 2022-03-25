@@ -1,0 +1,1789 @@
+<html>
+
+    <script>
+        function myFunction() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+        
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase()==filter || filter=="-1" ) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+        }
+        </script>
+
+<head>
+    <style>
+
+    #myInput {
+        background-position: 10px 12px; /* Position the search icon */
+        background-repeat: no-repeat; /* Do not repeat the icon image */
+        width: 100%; /* Full-width */
+        font-size: 16px; /* Increase font-size */
+        padding: 12px 20px 12px 40px; /* Add some padding */
+        border: 1px solid #ddd; /* Add a grey border */
+        margin-bottom: 12px; /* Add some space below the input */
+      }
+      
+      #myTable {
+        border-collapse: collapse; /* Collapse borders */
+        width: 100%; /* Full-width */
+        border: 1px solid #ddd; /* Add a grey border */
+        font-size: 18px; /* Increase font-size */
+      }
+      
+      #myTable th, #myTable td {
+        text-align: left; /* Left-align text */
+        padding: 12px; /* Add padding */
+      }
+      
+      #myTable tr {
+        /* Add a bottom border to all table rows */
+        border-bottom: 1px solid #ddd;
+      }
+      
+      #myTable tr.header, #myTable tr:hover {
+        /* Add a grey background color to the table header and on hover */
+        background-color: #f1f1f1;
+      }
+</style>
+</head>
+<body>
+
+    <label for="maintables">Please Select the table that will be extended:</label>
+
+    <select name="maintables" id="myInput" onchange="myFunction()">
+      <option value="-1">Select Will Be Extended Table</option>
+			<option value="TABLE 1">TABLE 1</option>
+			<option value="TABLE 2">TABLE 2</option>
+			<option value="TABLE 3">TABLE 3</option>
+			<option value="TABLE 4">TABLE 4</option>
+			<option value="TABLE 5">TABLE 5</option>
+			<option value="TABLE 6">TABLE 6</option>
+			<option value="TABLE 7">TABLE 7</option>
+			<option value="TABLE 8">TABLE 8</option>
+			<option value="TABLE 9">TABLE 9</option>
+			<option value="TABLE 10">TABLE 10</option>
+			<option value="TABLE 11">TABLE 11</option>
+			<option value="TABLE 12">TABLE 12</option>
+			<option value="TABLE 13">TABLE 13</option>
+			<option value="TABLE 14">TABLE 14</option>
+			<option value="TABLE 15">TABLE 15</option>
+			<option value="TABLE 16">TABLE 16</option>
+			<option value="TABLE 17">TABLE 17</option>
+			<option value="TABLE 18">TABLE 18</option>
+			<option value="TABLE 19">TABLE 19</option>
+			<option value="TABLE 20">TABLE 20</option>
+			<option value="TABLE 21">TABLE 21</option>
+			<option value="TABLE 22">TABLE 22</option>
+			<option value="TABLE 23">TABLE 23</option>
+			<option value="TABLE 24">TABLE 24</option>
+			<option value="TABLE 25">TABLE 25</option>
+			<option value="TABLE 26">TABLE 26</option>
+			<option value="TABLE 27">TABLE 27</option>
+			<option value="TABLE 28">TABLE 28</option>
+			<option value="TABLE 29">TABLE 29</option>
+			<option value="TABLE 30">TABLE 30</option>
+			<option value="TABLE 31">TABLE 31</option>
+			<option value="TABLE 32">TABLE 32</option>
+			<option value="TABLE 33">TABLE 33</option>
+			<option value="TABLE 34">TABLE 34</option>
+			<option value="TABLE 35">TABLE 35</option>
+			<option value="TABLE 36">TABLE 36</option>
+			<option value="TABLE 37">TABLE 37</option>
+			<option value="TABLE 38">TABLE 38</option>
+			<option value="TABLE 39">TABLE 39</option>
+			<option value="TABLE 40">TABLE 40</option>
+			<option value="TABLE 41">TABLE 41</option>
+			<option value="TABLE 42">TABLE 42</option>
+			<option value="TABLE 43">TABLE 43</option>
+			<option value="TABLE 44">TABLE 44</option>
+			<option value="TABLE 45">TABLE 45</option>
+			<option value="TABLE 46">TABLE 46</option>
+			<option value="TABLE 47">TABLE 47</option>
+			<option value="TABLE 48">TABLE 48</option>
+			<option value="TABLE 49">TABLE 49</option>
+			<option value="TABLE 50">TABLE 50</option>
+			<option value="TABLE 51">TABLE 51</option>
+			<option value="TABLE 52">TABLE 52</option>
+			<option value="TABLE 53">TABLE 53</option>
+			<option value="TABLE 54">TABLE 54</option>
+			<option value="TABLE 55">TABLE 55</option>
+			<option value="TABLE 56">TABLE 56</option>
+			<option value="TABLE 57">TABLE 57</option>
+			<option value="TABLE 58">TABLE 58</option>
+			<option value="TABLE 59">TABLE 59</option>
+			<option value="TABLE 60">TABLE 60</option>
+			<option value="TABLE 61">TABLE 61</option>
+			<option value="TABLE 62">TABLE 62</option>
+			<option value="TABLE 63">TABLE 63</option>
+			<option value="TABLE 64">TABLE 64</option>
+			<option value="TABLE 65">TABLE 65</option>
+			<option value="TABLE 66">TABLE 66</option>
+			<option value="TABLE 67">TABLE 67</option>
+			<option value="TABLE 68">TABLE 68</option>
+			<option value="TABLE 69">TABLE 69</option>
+			<option value="TABLE 70">TABLE 70</option>
+			<option value="TABLE 71">TABLE 71</option>
+			<option value="TABLE 72">TABLE 72</option>
+			<option value="TABLE 73">TABLE 73</option>
+			<option value="TABLE 74">TABLE 74</option>
+			<option value="TABLE 75">TABLE 75</option>
+			<option value="TABLE 76">TABLE 76</option>
+			<option value="TABLE 77">TABLE 77</option>
+			<option value="TABLE 78">TABLE 78</option>
+			<option value="TABLE 79">TABLE 79</option>
+			<option value="TABLE 80">TABLE 80</option>
+			<option value="TABLE 81">TABLE 81</option>
+			<option value="TABLE 82">TABLE 82</option>
+			<option value="TABLE 83">TABLE 83</option>
+			<option value="TABLE 84">TABLE 84</option>
+			<option value="TABLE 85">TABLE 85</option>
+			<option value="TABLE 86">TABLE 86</option>
+			<option value="TABLE 87">TABLE 87</option>
+			<option value="TABLE 88">TABLE 88</option>
+			<option value="TABLE 89">TABLE 89</option>
+			<option value="TABLE 90">TABLE 90</option>
+			<option value="TABLE 91">TABLE 91</option>
+			<option value="TABLE 92">TABLE 92</option>
+			<option value="TABLE 93">TABLE 93</option>
+			<option value="TABLE 94">TABLE 94</option>
+			<option value="TABLE 95">TABLE 95</option>
+			<option value="TABLE 96">TABLE 96</option>
+			<option value="TABLE 97">TABLE 97</option>
+			<option value="TABLE 98">TABLE 98</option>
+			<option value="TABLE 99">TABLE 99</option>
+			<option value="TABLE 100">TABLE 100</option>
+			<option value="TABLE 101">TABLE 101</option>
+			<option value="TABLE 102">TABLE 102</option>
+			<option value="TABLE 103">TABLE 103</option>
+			<option value="TABLE 104">TABLE 104</option>
+			<option value="TABLE 105">TABLE 105</option>
+			<option value="TABLE 106">TABLE 106</option>
+			<option value="TABLE 107">TABLE 107</option>
+			<option value="TABLE 108">TABLE 108</option>
+			<option value="TABLE 109">TABLE 109</option>
+			<option value="TABLE 110">TABLE 110</option>
+			<option value="TABLE 111">TABLE 111</option>
+			<option value="TABLE 112">TABLE 112</option>
+			<option value="TABLE 113">TABLE 113</option>
+			<option value="TABLE 114">TABLE 114</option>
+			<option value="TABLE 115">TABLE 115</option>
+			<option value="TABLE 116">TABLE 116</option>
+			<option value="TABLE 117">TABLE 117</option>
+			<option value="TABLE 118">TABLE 118</option>
+			<option value="TABLE 119">TABLE 119</option>
+			<option value="TABLE 120">TABLE 120</option>
+
+
+
+
+    </select>
+
+
+<!--    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."> -->
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:30%;">Main Table</th>
+    <th style="width:30%;">Depended Table</th>
+    <th style="width:20%;">Similarity Score</th>
+  </tr>
+
+ <tr><td>TABLE 1</td><td>TABLE 1</td><td>0,000</td></tr>
+<tr><td>TABLE 1</td><td>TABLE 2</td><td>0,148</td></tr>
+<tr><td>TABLE 1</td><td>TABLE 3</td><td>0,148</td></tr>
+<tr><td>TABLE 1</td><td>TABLE 4</td><td>0,304</td></tr>
+<tr><td>TABLE 1</td><td>TABLE 5</td><td>0,304</td></tr>
+<tr><td>TABLE 1</td><td>TABLE 6</td><td>0,229</td></tr>
+<tr><td>TABLE 1</td><td>TABLE 7</td><td>0,332</td></tr>
+<tr><td>TABLE 1</td><td>TABLE 8</td><td>0,336</td></tr>
+<tr><td>TABLE 1</td><td>TABLE 9</td><td>0,332</td></tr>
+<tr><td>TABLE 1</td><td>TABLE 10</td><td>0,332</td></tr>
+<tr><td>TABLE 1</td><td>TABLE 51</td><td>0,484</td></tr>
+<tr><td>TABLE 1</td><td>TABLE 53</td><td>0,438</td></tr>
+<tr><td>TABLE 1</td><td>TABLE 56</td><td>0,495</td></tr>
+<tr><td>TABLE 1</td><td>TABLE 57</td><td>0,461</td></tr>
+<tr><td>TABLE 1</td><td>TABLE 60</td><td>0,497</td></tr>
+<tr><td>TABLE 2</td><td>TABLE 1</td><td>0,148</td></tr>
+<tr><td>TABLE 2</td><td>TABLE 2</td><td>0,000</td></tr>
+<tr><td>TABLE 2</td><td>TABLE 3</td><td>0,000</td></tr>
+<tr><td>TABLE 2</td><td>TABLE 4</td><td>0,185</td></tr>
+<tr><td>TABLE 2</td><td>TABLE 5</td><td>0,185</td></tr>
+<tr><td>TABLE 2</td><td>TABLE 6</td><td>0,138</td></tr>
+<tr><td>TABLE 2</td><td>TABLE 7</td><td>0,229</td></tr>
+<tr><td>TABLE 2</td><td>TABLE 8</td><td>0,229</td></tr>
+<tr><td>TABLE 2</td><td>TABLE 9</td><td>0,229</td></tr>
+<tr><td>TABLE 2</td><td>TABLE 10</td><td>0,229</td></tr>
+<tr><td>TABLE 2</td><td>TABLE 51</td><td>0,461</td></tr>
+<tr><td>TABLE 2</td><td>TABLE 53</td><td>0,462</td></tr>
+<tr><td>TABLE 2</td><td>TABLE 54</td><td>0,490</td></tr>
+<tr><td>TABLE 2</td><td>TABLE 56</td><td>0,486</td></tr>
+<tr><td>TABLE 2</td><td>TABLE 57</td><td>0,484</td></tr>
+<tr><td>TABLE 3</td><td>TABLE 1</td><td>0,148</td></tr>
+<tr><td>TABLE 3</td><td>TABLE 2</td><td>0,000</td></tr>
+<tr><td>TABLE 3</td><td>TABLE 3</td><td>0,000</td></tr>
+<tr><td>TABLE 3</td><td>TABLE 4</td><td>0,185</td></tr>
+<tr><td>TABLE 3</td><td>TABLE 5</td><td>0,185</td></tr>
+<tr><td>TABLE 3</td><td>TABLE 6</td><td>0,138</td></tr>
+<tr><td>TABLE 3</td><td>TABLE 7</td><td>0,229</td></tr>
+<tr><td>TABLE 3</td><td>TABLE 8</td><td>0,229</td></tr>
+<tr><td>TABLE 3</td><td>TABLE 9</td><td>0,229</td></tr>
+<tr><td>TABLE 3</td><td>TABLE 10</td><td>0,229</td></tr>
+<tr><td>TABLE 3</td><td>TABLE 51</td><td>0,461</td></tr>
+<tr><td>TABLE 3</td><td>TABLE 53</td><td>0,462</td></tr>
+<tr><td>TABLE 3</td><td>TABLE 54</td><td>0,490</td></tr>
+<tr><td>TABLE 3</td><td>TABLE 56</td><td>0,486</td></tr>
+<tr><td>TABLE 3</td><td>TABLE 57</td><td>0,484</td></tr>
+<tr><td>TABLE 4</td><td>TABLE 1</td><td>0,304</td></tr>
+<tr><td>TABLE 4</td><td>TABLE 2</td><td>0,185</td></tr>
+<tr><td>TABLE 4</td><td>TABLE 3</td><td>0,185</td></tr>
+<tr><td>TABLE 4</td><td>TABLE 4</td><td>0,000</td></tr>
+<tr><td>TABLE 4</td><td>TABLE 5</td><td>0,000</td></tr>
+<tr><td>TABLE 4</td><td>TABLE 6</td><td>0,163</td></tr>
+<tr><td>TABLE 4</td><td>TABLE 7</td><td>0,072</td></tr>
+<tr><td>TABLE 4</td><td>TABLE 8</td><td>0,238</td></tr>
+<tr><td>TABLE 4</td><td>TABLE 9</td><td>0,072</td></tr>
+<tr><td>TABLE 4</td><td>TABLE 10</td><td>0,072</td></tr>
+<tr><td>TABLE 5</td><td>TABLE 1</td><td>0,304</td></tr>
+<tr><td>TABLE 5</td><td>TABLE 2</td><td>0,185</td></tr>
+<tr><td>TABLE 5</td><td>TABLE 3</td><td>0,185</td></tr>
+<tr><td>TABLE 5</td><td>TABLE 4</td><td>0,000</td></tr>
+<tr><td>TABLE 5</td><td>TABLE 5</td><td>0,000</td></tr>
+<tr><td>TABLE 5</td><td>TABLE 6</td><td>0,163</td></tr>
+<tr><td>TABLE 5</td><td>TABLE 7</td><td>0,072</td></tr>
+<tr><td>TABLE 5</td><td>TABLE 8</td><td>0,238</td></tr>
+<tr><td>TABLE 5</td><td>TABLE 9</td><td>0,072</td></tr>
+<tr><td>TABLE 5</td><td>TABLE 10</td><td>0,072</td></tr>
+<tr><td>TABLE 6</td><td>TABLE 1</td><td>0,229</td></tr>
+<tr><td>TABLE 6</td><td>TABLE 2</td><td>0,138</td></tr>
+<tr><td>TABLE 6</td><td>TABLE 3</td><td>0,138</td></tr>
+<tr><td>TABLE 6</td><td>TABLE 4</td><td>0,163</td></tr>
+<tr><td>TABLE 6</td><td>TABLE 5</td><td>0,163</td></tr>
+<tr><td>TABLE 6</td><td>TABLE 6</td><td>0,000</td></tr>
+<tr><td>TABLE 6</td><td>TABLE 7</td><td>0,210</td></tr>
+<tr><td>TABLE 6</td><td>TABLE 8</td><td>0,242</td></tr>
+<tr><td>TABLE 6</td><td>TABLE 9</td><td>0,210</td></tr>
+<tr><td>TABLE 6</td><td>TABLE 10</td><td>0,210</td></tr>
+<tr><td>TABLE 6</td><td>TABLE 51</td><td>0,489</td></tr>
+<tr><td>TABLE 7</td><td>TABLE 1</td><td>0,332</td></tr>
+<tr><td>TABLE 7</td><td>TABLE 2</td><td>0,229</td></tr>
+<tr><td>TABLE 7</td><td>TABLE 3</td><td>0,229</td></tr>
+<tr><td>TABLE 7</td><td>TABLE 4</td><td>0,072</td></tr>
+<tr><td>TABLE 7</td><td>TABLE 5</td><td>0,072</td></tr>
+<tr><td>TABLE 7</td><td>TABLE 6</td><td>0,210</td></tr>
+<tr><td>TABLE 7</td><td>TABLE 7</td><td>0,000</td></tr>
+<tr><td>TABLE 7</td><td>TABLE 8</td><td>0,274</td></tr>
+<tr><td>TABLE 7</td><td>TABLE 9</td><td>0,000</td></tr>
+<tr><td>TABLE 7</td><td>TABLE 10</td><td>0,000</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 1</td><td>0,336</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 2</td><td>0,229</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 3</td><td>0,229</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 4</td><td>0,238</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 5</td><td>0,238</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 6</td><td>0,242</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 7</td><td>0,274</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 8</td><td>0,000</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 9</td><td>0,274</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 10</td><td>0,274</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 12</td><td>0,477</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 13</td><td>0,477</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 20</td><td>0,454</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 51</td><td>0,356</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 52</td><td>0,486</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 53</td><td>0,397</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 54</td><td>0,384</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 55</td><td>0,465</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 56</td><td>0,383</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 57</td><td>0,421</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 59</td><td>0,425</td></tr>
+<tr><td>TABLE 8</td><td>TABLE 60</td><td>0,413</td></tr>
+<tr><td>TABLE 9</td><td>TABLE 1</td><td>0,332</td></tr>
+<tr><td>TABLE 9</td><td>TABLE 2</td><td>0,229</td></tr>
+<tr><td>TABLE 9</td><td>TABLE 3</td><td>0,229</td></tr>
+<tr><td>TABLE 9</td><td>TABLE 4</td><td>0,072</td></tr>
+<tr><td>TABLE 9</td><td>TABLE 5</td><td>0,072</td></tr>
+<tr><td>TABLE 9</td><td>TABLE 6</td><td>0,210</td></tr>
+<tr><td>TABLE 9</td><td>TABLE 7</td><td>0,000</td></tr>
+<tr><td>TABLE 9</td><td>TABLE 8</td><td>0,274</td></tr>
+<tr><td>TABLE 9</td><td>TABLE 9</td><td>0,000</td></tr>
+<tr><td>TABLE 9</td><td>TABLE 10</td><td>0,000</td></tr>
+<tr><td>TABLE 10</td><td>TABLE 1</td><td>0,332</td></tr>
+<tr><td>TABLE 10</td><td>TABLE 2</td><td>0,229</td></tr>
+<tr><td>TABLE 10</td><td>TABLE 3</td><td>0,229</td></tr>
+<tr><td>TABLE 10</td><td>TABLE 4</td><td>0,072</td></tr>
+<tr><td>TABLE 10</td><td>TABLE 5</td><td>0,072</td></tr>
+<tr><td>TABLE 10</td><td>TABLE 6</td><td>0,210</td></tr>
+<tr><td>TABLE 10</td><td>TABLE 7</td><td>0,000</td></tr>
+<tr><td>TABLE 10</td><td>TABLE 8</td><td>0,274</td></tr>
+<tr><td>TABLE 10</td><td>TABLE 9</td><td>0,000</td></tr>
+<tr><td>TABLE 10</td><td>TABLE 10</td><td>0,000</td></tr>
+<tr><td>TABLE 11</td><td>TABLE 11</td><td>0,000</td></tr>
+<tr><td>TABLE 11</td><td>TABLE 12</td><td>0,152</td></tr>
+<tr><td>TABLE 11</td><td>TABLE 13</td><td>0,152</td></tr>
+<tr><td>TABLE 11</td><td>TABLE 14</td><td>0,135</td></tr>
+<tr><td>TABLE 11</td><td>TABLE 15</td><td>0,124</td></tr>
+<tr><td>TABLE 11</td><td>TABLE 16</td><td>0,106</td></tr>
+<tr><td>TABLE 11</td><td>TABLE 17</td><td>0,205</td></tr>
+<tr><td>TABLE 11</td><td>TABLE 18</td><td>0,160</td></tr>
+<tr><td>TABLE 11</td><td>TABLE 19</td><td>0,079</td></tr>
+<tr><td>TABLE 11</td><td>TABLE 20</td><td>0,124</td></tr>
+<tr><td>TABLE 11</td><td>TABLE 51</td><td>0,420</td></tr>
+<tr><td>TABLE 11</td><td>TABLE 52</td><td>0,485</td></tr>
+<tr><td>TABLE 11</td><td>TABLE 54</td><td>0,450</td></tr>
+<tr><td>TABLE 11</td><td>TABLE 56</td><td>0,464</td></tr>
+<tr><td>TABLE 11</td><td>TABLE 59</td><td>0,344</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 8</td><td>0,477</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 11</td><td>0,152</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 12</td><td>0,000</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 13</td><td>0,000</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 14</td><td>0,175</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 15</td><td>0,205</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 16</td><td>0,196</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 17</td><td>0,223</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 18</td><td>0,205</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 19</td><td>0,133</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 20</td><td>0,137</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 51</td><td>0,426</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 52</td><td>0,489</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 54</td><td>0,447</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 55</td><td>0,489</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 56</td><td>0,448</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 59</td><td>0,369</td></tr>
+<tr><td>TABLE 12</td><td>TABLE 60</td><td>0,497</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 8</td><td>0,477</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 11</td><td>0,152</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 12</td><td>0,000</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 13</td><td>0,000</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 14</td><td>0,175</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 15</td><td>0,205</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 16</td><td>0,196</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 17</td><td>0,223</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 18</td><td>0,205</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 19</td><td>0,133</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 20</td><td>0,137</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 51</td><td>0,426</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 52</td><td>0,489</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 54</td><td>0,447</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 55</td><td>0,489</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 56</td><td>0,448</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 59</td><td>0,369</td></tr>
+<tr><td>TABLE 13</td><td>TABLE 60</td><td>0,497</td></tr>
+<tr><td>TABLE 14</td><td>TABLE 11</td><td>0,135</td></tr>
+<tr><td>TABLE 14</td><td>TABLE 12</td><td>0,175</td></tr>
+<tr><td>TABLE 14</td><td>TABLE 13</td><td>0,175</td></tr>
+<tr><td>TABLE 14</td><td>TABLE 14</td><td>0,000</td></tr>
+<tr><td>TABLE 14</td><td>TABLE 15</td><td>0,152</td></tr>
+<tr><td>TABLE 14</td><td>TABLE 16</td><td>0,154</td></tr>
+<tr><td>TABLE 14</td><td>TABLE 17</td><td>0,096</td></tr>
+<tr><td>TABLE 14</td><td>TABLE 18</td><td>0,109</td></tr>
+<tr><td>TABLE 14</td><td>TABLE 19</td><td>0,151</td></tr>
+<tr><td>TABLE 14</td><td>TABLE 20</td><td>0,193</td></tr>
+<tr><td>TABLE 14</td><td>TABLE 59</td><td>0,447</td></tr>
+<tr><td>TABLE 15</td><td>TABLE 11</td><td>0,124</td></tr>
+<tr><td>TABLE 15</td><td>TABLE 12</td><td>0,205</td></tr>
+<tr><td>TABLE 15</td><td>TABLE 13</td><td>0,205</td></tr>
+<tr><td>TABLE 15</td><td>TABLE 14</td><td>0,152</td></tr>
+<tr><td>TABLE 15</td><td>TABLE 15</td><td>0,000</td></tr>
+<tr><td>TABLE 15</td><td>TABLE 16</td><td>0,173</td></tr>
+<tr><td>TABLE 15</td><td>TABLE 17</td><td>0,240</td></tr>
+<tr><td>TABLE 15</td><td>TABLE 18</td><td>0,100</td></tr>
+<tr><td>TABLE 15</td><td>TABLE 19</td><td>0,136</td></tr>
+<tr><td>TABLE 15</td><td>TABLE 20</td><td>0,176</td></tr>
+<tr><td>TABLE 15</td><td>TABLE 51</td><td>0,467</td></tr>
+<tr><td>TABLE 15</td><td>TABLE 52</td><td>0,482</td></tr>
+<tr><td>TABLE 15</td><td>TABLE 54</td><td>0,474</td></tr>
+<tr><td>TABLE 15</td><td>TABLE 55</td><td>0,497</td></tr>
+<tr><td>TABLE 15</td><td>TABLE 56</td><td>0,496</td></tr>
+<tr><td>TABLE 15</td><td>TABLE 59</td><td>0,351</td></tr>
+<tr><td>TABLE 16</td><td>TABLE 11</td><td>0,106</td></tr>
+<tr><td>TABLE 16</td><td>TABLE 12</td><td>0,196</td></tr>
+<tr><td>TABLE 16</td><td>TABLE 13</td><td>0,196</td></tr>
+<tr><td>TABLE 16</td><td>TABLE 14</td><td>0,154</td></tr>
+<tr><td>TABLE 16</td><td>TABLE 15</td><td>0,173</td></tr>
+<tr><td>TABLE 16</td><td>TABLE 16</td><td>0,000</td></tr>
+<tr><td>TABLE 16</td><td>TABLE 17</td><td>0,207</td></tr>
+<tr><td>TABLE 16</td><td>TABLE 18</td><td>0,200</td></tr>
+<tr><td>TABLE 16</td><td>TABLE 19</td><td>0,128</td></tr>
+<tr><td>TABLE 16</td><td>TABLE 20</td><td>0,164</td></tr>
+<tr><td>TABLE 16</td><td>TABLE 51</td><td>0,483</td></tr>
+<tr><td>TABLE 16</td><td>TABLE 59</td><td>0,407</td></tr>
+<tr><td>TABLE 17</td><td>TABLE 11</td><td>0,205</td></tr>
+<tr><td>TABLE 17</td><td>TABLE 12</td><td>0,223</td></tr>
+<tr><td>TABLE 17</td><td>TABLE 13</td><td>0,223</td></tr>
+<tr><td>TABLE 17</td><td>TABLE 14</td><td>0,096</td></tr>
+<tr><td>TABLE 17</td><td>TABLE 15</td><td>0,240</td></tr>
+<tr><td>TABLE 17</td><td>TABLE 16</td><td>0,207</td></tr>
+<tr><td>TABLE 17</td><td>TABLE 17</td><td>0,000</td></tr>
+<tr><td>TABLE 17</td><td>TABLE 18</td><td>0,189</td></tr>
+<tr><td>TABLE 17</td><td>TABLE 19</td><td>0,221</td></tr>
+<tr><td>TABLE 17</td><td>TABLE 20</td><td>0,260</td></tr>
+<tr><td>TABLE 18</td><td>TABLE 11</td><td>0,160</td></tr>
+<tr><td>TABLE 18</td><td>TABLE 12</td><td>0,205</td></tr>
+<tr><td>TABLE 18</td><td>TABLE 13</td><td>0,205</td></tr>
+<tr><td>TABLE 18</td><td>TABLE 14</td><td>0,109</td></tr>
+<tr><td>TABLE 18</td><td>TABLE 15</td><td>0,100</td></tr>
+<tr><td>TABLE 18</td><td>TABLE 16</td><td>0,200</td></tr>
+<tr><td>TABLE 18</td><td>TABLE 17</td><td>0,189</td></tr>
+<tr><td>TABLE 18</td><td>TABLE 18</td><td>0,000</td></tr>
+<tr><td>TABLE 18</td><td>TABLE 19</td><td>0,164</td></tr>
+<tr><td>TABLE 18</td><td>TABLE 20</td><td>0,203</td></tr>
+<tr><td>TABLE 18</td><td>TABLE 59</td><td>0,405</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 11</td><td>0,079</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 12</td><td>0,133</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 13</td><td>0,133</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 14</td><td>0,151</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 15</td><td>0,136</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 16</td><td>0,128</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 17</td><td>0,221</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 18</td><td>0,164</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 19</td><td>0,000</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 20</td><td>0,107</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 51</td><td>0,416</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 52</td><td>0,467</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 54</td><td>0,440</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 55</td><td>0,480</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 56</td><td>0,458</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 59</td><td>0,334</td></tr>
+<tr><td>TABLE 19</td><td>TABLE 60</td><td>0,499</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 8</td><td>0,454</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 11</td><td>0,124</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 12</td><td>0,137</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 13</td><td>0,137</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 14</td><td>0,193</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 15</td><td>0,176</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 16</td><td>0,164</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 17</td><td>0,260</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 18</td><td>0,203</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 19</td><td>0,107</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 20</td><td>0,000</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 51</td><td>0,386</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 52</td><td>0,463</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 54</td><td>0,410</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 55</td><td>0,465</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 56</td><td>0,432</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 59</td><td>0,301</td></tr>
+<tr><td>TABLE 20</td><td>TABLE 60</td><td>0,468</td></tr>
+<tr><td>TABLE 21</td><td>TABLE 21</td><td>0,000</td></tr>
+<tr><td>TABLE 21</td><td>TABLE 22</td><td>0,286</td></tr>
+<tr><td>TABLE 21</td><td>TABLE 23</td><td>0,202</td></tr>
+<tr><td>TABLE 21</td><td>TABLE 24</td><td>0,202</td></tr>
+<tr><td>TABLE 21</td><td>TABLE 25</td><td>0,202</td></tr>
+<tr><td>TABLE 21</td><td>TABLE 26</td><td>0,321</td></tr>
+<tr><td>TABLE 21</td><td>TABLE 27</td><td>0,246</td></tr>
+<tr><td>TABLE 21</td><td>TABLE 28</td><td>0,235</td></tr>
+<tr><td>TABLE 21</td><td>TABLE 29</td><td>0,240</td></tr>
+<tr><td>TABLE 21</td><td>TABLE 30</td><td>0,240</td></tr>
+<tr><td>TABLE 22</td><td>TABLE 21</td><td>0,286</td></tr>
+<tr><td>TABLE 22</td><td>TABLE 22</td><td>0,000</td></tr>
+<tr><td>TABLE 22</td><td>TABLE 23</td><td>0,163</td></tr>
+<tr><td>TABLE 22</td><td>TABLE 24</td><td>0,163</td></tr>
+<tr><td>TABLE 22</td><td>TABLE 25</td><td>0,163</td></tr>
+<tr><td>TABLE 22</td><td>TABLE 26</td><td>0,134</td></tr>
+<tr><td>TABLE 22</td><td>TABLE 27</td><td>0,070</td></tr>
+<tr><td>TABLE 22</td><td>TABLE 28</td><td>0,168</td></tr>
+<tr><td>TABLE 22</td><td>TABLE 29</td><td>0,148</td></tr>
+<tr><td>TABLE 22</td><td>TABLE 30</td><td>0,148</td></tr>
+<tr><td>TABLE 23</td><td>TABLE 21</td><td>0,202</td></tr>
+<tr><td>TABLE 23</td><td>TABLE 22</td><td>0,163</td></tr>
+<tr><td>TABLE 23</td><td>TABLE 23</td><td>0,000</td></tr>
+<tr><td>TABLE 23</td><td>TABLE 24</td><td>0,000</td></tr>
+<tr><td>TABLE 23</td><td>TABLE 25</td><td>0,000</td></tr>
+<tr><td>TABLE 23</td><td>TABLE 26</td><td>0,171</td></tr>
+<tr><td>TABLE 23</td><td>TABLE 27</td><td>0,134</td></tr>
+<tr><td>TABLE 23</td><td>TABLE 28</td><td>0,178</td></tr>
+<tr><td>TABLE 23</td><td>TABLE 29</td><td>0,116</td></tr>
+<tr><td>TABLE 23</td><td>TABLE 30</td><td>0,116</td></tr>
+<tr><td>TABLE 24</td><td>TABLE 21</td><td>0,202</td></tr>
+<tr><td>TABLE 24</td><td>TABLE 22</td><td>0,163</td></tr>
+<tr><td>TABLE 24</td><td>TABLE 23</td><td>0,000</td></tr>
+<tr><td>TABLE 24</td><td>TABLE 24</td><td>0,000</td></tr>
+<tr><td>TABLE 24</td><td>TABLE 25</td><td>0,000</td></tr>
+<tr><td>TABLE 24</td><td>TABLE 26</td><td>0,171</td></tr>
+<tr><td>TABLE 24</td><td>TABLE 27</td><td>0,134</td></tr>
+<tr><td>TABLE 24</td><td>TABLE 28</td><td>0,178</td></tr>
+<tr><td>TABLE 24</td><td>TABLE 29</td><td>0,116</td></tr>
+<tr><td>TABLE 24</td><td>TABLE 30</td><td>0,116</td></tr>
+<tr><td>TABLE 25</td><td>TABLE 21</td><td>0,202</td></tr>
+<tr><td>TABLE 25</td><td>TABLE 22</td><td>0,163</td></tr>
+<tr><td>TABLE 25</td><td>TABLE 23</td><td>0,000</td></tr>
+<tr><td>TABLE 25</td><td>TABLE 24</td><td>0,000</td></tr>
+<tr><td>TABLE 25</td><td>TABLE 25</td><td>0,000</td></tr>
+<tr><td>TABLE 25</td><td>TABLE 26</td><td>0,171</td></tr>
+<tr><td>TABLE 25</td><td>TABLE 27</td><td>0,134</td></tr>
+<tr><td>TABLE 25</td><td>TABLE 28</td><td>0,178</td></tr>
+<tr><td>TABLE 25</td><td>TABLE 29</td><td>0,116</td></tr>
+<tr><td>TABLE 25</td><td>TABLE 30</td><td>0,116</td></tr>
+<tr><td>TABLE 26</td><td>TABLE 21</td><td>0,321</td></tr>
+<tr><td>TABLE 26</td><td>TABLE 22</td><td>0,134</td></tr>
+<tr><td>TABLE 26</td><td>TABLE 23</td><td>0,171</td></tr>
+<tr><td>TABLE 26</td><td>TABLE 24</td><td>0,171</td></tr>
+<tr><td>TABLE 26</td><td>TABLE 25</td><td>0,171</td></tr>
+<tr><td>TABLE 26</td><td>TABLE 26</td><td>0,000</td></tr>
+<tr><td>TABLE 26</td><td>TABLE 27</td><td>0,164</td></tr>
+<tr><td>TABLE 26</td><td>TABLE 28</td><td>0,269</td></tr>
+<tr><td>TABLE 26</td><td>TABLE 29</td><td>0,120</td></tr>
+<tr><td>TABLE 26</td><td>TABLE 30</td><td>0,120</td></tr>
+<tr><td>TABLE 27</td><td>TABLE 21</td><td>0,246</td></tr>
+<tr><td>TABLE 27</td><td>TABLE 22</td><td>0,070</td></tr>
+<tr><td>TABLE 27</td><td>TABLE 23</td><td>0,134</td></tr>
+<tr><td>TABLE 27</td><td>TABLE 24</td><td>0,134</td></tr>
+<tr><td>TABLE 27</td><td>TABLE 25</td><td>0,134</td></tr>
+<tr><td>TABLE 27</td><td>TABLE 26</td><td>0,164</td></tr>
+<tr><td>TABLE 27</td><td>TABLE 27</td><td>0,000</td></tr>
+<tr><td>TABLE 27</td><td>TABLE 28</td><td>0,120</td></tr>
+<tr><td>TABLE 27</td><td>TABLE 29</td><td>0,145</td></tr>
+<tr><td>TABLE 27</td><td>TABLE 30</td><td>0,145</td></tr>
+<tr><td>TABLE 28</td><td>TABLE 21</td><td>0,235</td></tr>
+<tr><td>TABLE 28</td><td>TABLE 22</td><td>0,168</td></tr>
+<tr><td>TABLE 28</td><td>TABLE 23</td><td>0,178</td></tr>
+<tr><td>TABLE 28</td><td>TABLE 24</td><td>0,178</td></tr>
+<tr><td>TABLE 28</td><td>TABLE 25</td><td>0,178</td></tr>
+<tr><td>TABLE 28</td><td>TABLE 26</td><td>0,269</td></tr>
+<tr><td>TABLE 28</td><td>TABLE 27</td><td>0,120</td></tr>
+<tr><td>TABLE 28</td><td>TABLE 28</td><td>0,000</td></tr>
+<tr><td>TABLE 28</td><td>TABLE 29</td><td>0,236</td></tr>
+<tr><td>TABLE 28</td><td>TABLE 30</td><td>0,236</td></tr>
+<tr><td>TABLE 29</td><td>TABLE 21</td><td>0,240</td></tr>
+<tr><td>TABLE 29</td><td>TABLE 22</td><td>0,148</td></tr>
+<tr><td>TABLE 29</td><td>TABLE 23</td><td>0,116</td></tr>
+<tr><td>TABLE 29</td><td>TABLE 24</td><td>0,116</td></tr>
+<tr><td>TABLE 29</td><td>TABLE 25</td><td>0,116</td></tr>
+<tr><td>TABLE 29</td><td>TABLE 26</td><td>0,120</td></tr>
+<tr><td>TABLE 29</td><td>TABLE 27</td><td>0,145</td></tr>
+<tr><td>TABLE 29</td><td>TABLE 28</td><td>0,236</td></tr>
+<tr><td>TABLE 29</td><td>TABLE 29</td><td>0,000</td></tr>
+<tr><td>TABLE 29</td><td>TABLE 30</td><td>0,000</td></tr>
+<tr><td>TABLE 30</td><td>TABLE 21</td><td>0,240</td></tr>
+<tr><td>TABLE 30</td><td>TABLE 22</td><td>0,148</td></tr>
+<tr><td>TABLE 30</td><td>TABLE 23</td><td>0,116</td></tr>
+<tr><td>TABLE 30</td><td>TABLE 24</td><td>0,116</td></tr>
+<tr><td>TABLE 30</td><td>TABLE 25</td><td>0,116</td></tr>
+<tr><td>TABLE 30</td><td>TABLE 26</td><td>0,120</td></tr>
+<tr><td>TABLE 30</td><td>TABLE 27</td><td>0,145</td></tr>
+<tr><td>TABLE 30</td><td>TABLE 28</td><td>0,236</td></tr>
+<tr><td>TABLE 30</td><td>TABLE 29</td><td>0,000</td></tr>
+<tr><td>TABLE 30</td><td>TABLE 30</td><td>0,000</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 31</td><td>0,000</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 32</td><td>0,071</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 33</td><td>0,039</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 34</td><td>0,083</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 35</td><td>0,052</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 36</td><td>0,089</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 37</td><td>0,190</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 38</td><td>0,172</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 39</td><td>0,182</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 40</td><td>0,105</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 61</td><td>0,471</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 63</td><td>0,379</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 64</td><td>0,458</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 65</td><td>0,397</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 68</td><td>0,384</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 69</td><td>0,384</td></tr>
+<tr><td>TABLE 31</td><td>TABLE 70</td><td>0,384</td></tr>
+<tr><td>TABLE 32</td><td>TABLE 31</td><td>0,071</td></tr>
+<tr><td>TABLE 32</td><td>TABLE 32</td><td>0,000</td></tr>
+<tr><td>TABLE 32</td><td>TABLE 33</td><td>0,092</td></tr>
+<tr><td>TABLE 32</td><td>TABLE 34</td><td>0,146</td></tr>
+<tr><td>TABLE 32</td><td>TABLE 35</td><td>0,073</td></tr>
+<tr><td>TABLE 32</td><td>TABLE 36</td><td>0,121</td></tr>
+<tr><td>TABLE 32</td><td>TABLE 37</td><td>0,200</td></tr>
+<tr><td>TABLE 32</td><td>TABLE 38</td><td>0,192</td></tr>
+<tr><td>TABLE 32</td><td>TABLE 39</td><td>0,175</td></tr>
+<tr><td>TABLE 32</td><td>TABLE 40</td><td>0,114</td></tr>
+<tr><td>TABLE 32</td><td>TABLE 63</td><td>0,414</td></tr>
+<tr><td>TABLE 32</td><td>TABLE 65</td><td>0,433</td></tr>
+<tr><td>TABLE 32</td><td>TABLE 68</td><td>0,419</td></tr>
+<tr><td>TABLE 32</td><td>TABLE 69</td><td>0,419</td></tr>
+<tr><td>TABLE 32</td><td>TABLE 70</td><td>0,419</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 31</td><td>0,039</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 32</td><td>0,092</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 33</td><td>0,000</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 34</td><td>0,079</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 35</td><td>0,072</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 36</td><td>0,069</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 37</td><td>0,189</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 38</td><td>0,158</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 39</td><td>0,165</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 40</td><td>0,106</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 61</td><td>0,489</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 63</td><td>0,389</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 64</td><td>0,470</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 65</td><td>0,412</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 68</td><td>0,402</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 69</td><td>0,402</td></tr>
+<tr><td>TABLE 33</td><td>TABLE 70</td><td>0,402</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 31</td><td>0,083</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 32</td><td>0,146</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 33</td><td>0,079</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 34</td><td>0,000</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 35</td><td>0,122</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 36</td><td>0,090</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 37</td><td>0,198</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 38</td><td>0,147</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 39</td><td>0,193</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 40</td><td>0,117</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 61</td><td>0,428</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 62</td><td>0,496</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 63</td><td>0,326</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 64</td><td>0,398</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 65</td><td>0,348</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 66</td><td>0,463</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 67</td><td>0,463</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 68</td><td>0,341</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 69</td><td>0,341</td></tr>
+<tr><td>TABLE 34</td><td>TABLE 70</td><td>0,341</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 31</td><td>0,052</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 32</td><td>0,073</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 33</td><td>0,072</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 34</td><td>0,122</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 35</td><td>0,000</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 36</td><td>0,125</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 37</td><td>0,191</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 38</td><td>0,200</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 39</td><td>0,194</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 40</td><td>0,127</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 61</td><td>0,496</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 63</td><td>0,408</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 64</td><td>0,483</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 65</td><td>0,424</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 68</td><td>0,408</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 69</td><td>0,408</td></tr>
+<tr><td>TABLE 35</td><td>TABLE 70</td><td>0,408</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 31</td><td>0,089</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 32</td><td>0,121</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 33</td><td>0,069</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 34</td><td>0,090</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 35</td><td>0,125</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 36</td><td>0,000</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 37</td><td>0,208</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 38</td><td>0,120</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 39</td><td>0,129</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 40</td><td>0,089</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 61</td><td>0,485</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 63</td><td>0,375</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 64</td><td>0,470</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 65</td><td>0,407</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 68</td><td>0,403</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 69</td><td>0,403</td></tr>
+<tr><td>TABLE 36</td><td>TABLE 70</td><td>0,403</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 31</td><td>0,190</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 32</td><td>0,200</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 33</td><td>0,189</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 34</td><td>0,198</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 35</td><td>0,191</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 36</td><td>0,208</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 37</td><td>0,000</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 38</td><td>0,194</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 39</td><td>0,213</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 40</td><td>0,149</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 63</td><td>0,377</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 64</td><td>0,495</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 65</td><td>0,425</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 68</td><td>0,422</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 69</td><td>0,422</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 70</td><td>0,422</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 113</td><td>0,422</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 114</td><td>0,447</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 115</td><td>0,434</td></tr>
+<tr><td>TABLE 37</td><td>TABLE 116</td><td>0,491</td></tr>
+<tr><td>TABLE 38</td><td>TABLE 31</td><td>0,172</td></tr>
+<tr><td>TABLE 38</td><td>TABLE 32</td><td>0,192</td></tr>
+<tr><td>TABLE 38</td><td>TABLE 33</td><td>0,158</td></tr>
+<tr><td>TABLE 38</td><td>TABLE 34</td><td>0,147</td></tr>
+<tr><td>TABLE 38</td><td>TABLE 35</td><td>0,200</td></tr>
+<tr><td>TABLE 38</td><td>TABLE 36</td><td>0,120</td></tr>
+<tr><td>TABLE 38</td><td>TABLE 37</td><td>0,194</td></tr>
+<tr><td>TABLE 38</td><td>TABLE 38</td><td>0,000</td></tr>
+<tr><td>TABLE 38</td><td>TABLE 39</td><td>0,110</td></tr>
+<tr><td>TABLE 38</td><td>TABLE 40</td><td>0,105</td></tr>
+<tr><td>TABLE 38</td><td>TABLE 63</td><td>0,341</td></tr>
+<tr><td>TABLE 38</td><td>TABLE 64</td><td>0,467</td></tr>
+<tr><td>TABLE 38</td><td>TABLE 65</td><td>0,396</td></tr>
+<tr><td>TABLE 38</td><td>TABLE 68</td><td>0,409</td></tr>
+<tr><td>TABLE 38</td><td>TABLE 69</td><td>0,409</td></tr>
+<tr><td>TABLE 38</td><td>TABLE 70</td><td>0,409</td></tr>
+<tr><td>TABLE 39</td><td>TABLE 31</td><td>0,182</td></tr>
+<tr><td>TABLE 39</td><td>TABLE 32</td><td>0,175</td></tr>
+<tr><td>TABLE 39</td><td>TABLE 33</td><td>0,165</td></tr>
+<tr><td>TABLE 39</td><td>TABLE 34</td><td>0,193</td></tr>
+<tr><td>TABLE 39</td><td>TABLE 35</td><td>0,194</td></tr>
+<tr><td>TABLE 39</td><td>TABLE 36</td><td>0,129</td></tr>
+<tr><td>TABLE 39</td><td>TABLE 37</td><td>0,213</td></tr>
+<tr><td>TABLE 39</td><td>TABLE 38</td><td>0,110</td></tr>
+<tr><td>TABLE 39</td><td>TABLE 39</td><td>0,000</td></tr>
+<tr><td>TABLE 39</td><td>TABLE 40</td><td>0,125</td></tr>
+<tr><td>TABLE 39</td><td>TABLE 63</td><td>0,434</td></tr>
+<tr><td>TABLE 39</td><td>TABLE 65</td><td>0,480</td></tr>
+<tr><td>TABLE 39</td><td>TABLE 68</td><td>0,487</td></tr>
+<tr><td>TABLE 39</td><td>TABLE 69</td><td>0,487</td></tr>
+<tr><td>TABLE 39</td><td>TABLE 70</td><td>0,487</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 31</td><td>0,105</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 32</td><td>0,114</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 33</td><td>0,106</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 34</td><td>0,117</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 35</td><td>0,127</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 36</td><td>0,089</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 37</td><td>0,149</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 38</td><td>0,105</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 39</td><td>0,125</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 40</td><td>0,000</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 61</td><td>0,482</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 63</td><td>0,344</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 64</td><td>0,460</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 65</td><td>0,382</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 68</td><td>0,381</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 69</td><td>0,381</td></tr>
+<tr><td>TABLE 40</td><td>TABLE 70</td><td>0,381</td></tr>
+<tr><td>TABLE 41</td><td>TABLE 41</td><td>0,000</td></tr>
+<tr><td>TABLE 41</td><td>TABLE 42</td><td>0,233</td></tr>
+<tr><td>TABLE 41</td><td>TABLE 43</td><td>0,233</td></tr>
+<tr><td>TABLE 41</td><td>TABLE 44</td><td>0,233</td></tr>
+<tr><td>TABLE 41</td><td>TABLE 45</td><td>0,233</td></tr>
+<tr><td>TABLE 41</td><td>TABLE 46</td><td>0,251</td></tr>
+<tr><td>TABLE 41</td><td>TABLE 47</td><td>0,251</td></tr>
+<tr><td>TABLE 41</td><td>TABLE 48</td><td>0,251</td></tr>
+<tr><td>TABLE 41</td><td>TABLE 49</td><td>0,319</td></tr>
+<tr><td>TABLE 41</td><td>TABLE 50</td><td>0,283</td></tr>
+<tr><td>TABLE 42</td><td>TABLE 41</td><td>0,233</td></tr>
+<tr><td>TABLE 42</td><td>TABLE 42</td><td>0,000</td></tr>
+<tr><td>TABLE 42</td><td>TABLE 43</td><td>0,000</td></tr>
+<tr><td>TABLE 42</td><td>TABLE 44</td><td>0,000</td></tr>
+<tr><td>TABLE 42</td><td>TABLE 45</td><td>0,000</td></tr>
+<tr><td>TABLE 42</td><td>TABLE 46</td><td>0,074</td></tr>
+<tr><td>TABLE 42</td><td>TABLE 47</td><td>0,074</td></tr>
+<tr><td>TABLE 42</td><td>TABLE 48</td><td>0,074</td></tr>
+<tr><td>TABLE 42</td><td>TABLE 49</td><td>0,114</td></tr>
+<tr><td>TABLE 42</td><td>TABLE 50</td><td>0,072</td></tr>
+<tr><td>TABLE 42</td><td>TABLE 81</td><td>0,469</td></tr>
+<tr><td>TABLE 42</td><td>TABLE 86</td><td>0,497</td></tr>
+<tr><td>TABLE 42</td><td>TABLE 89</td><td>0,461</td></tr>
+<tr><td>TABLE 43</td><td>TABLE 41</td><td>0,233</td></tr>
+<tr><td>TABLE 43</td><td>TABLE 42</td><td>0,000</td></tr>
+<tr><td>TABLE 43</td><td>TABLE 43</td><td>0,000</td></tr>
+<tr><td>TABLE 43</td><td>TABLE 44</td><td>0,000</td></tr>
+<tr><td>TABLE 43</td><td>TABLE 45</td><td>0,000</td></tr>
+<tr><td>TABLE 43</td><td>TABLE 46</td><td>0,074</td></tr>
+<tr><td>TABLE 43</td><td>TABLE 47</td><td>0,074</td></tr>
+<tr><td>TABLE 43</td><td>TABLE 48</td><td>0,074</td></tr>
+<tr><td>TABLE 43</td><td>TABLE 49</td><td>0,114</td></tr>
+<tr><td>TABLE 43</td><td>TABLE 50</td><td>0,072</td></tr>
+<tr><td>TABLE 43</td><td>TABLE 81</td><td>0,469</td></tr>
+<tr><td>TABLE 43</td><td>TABLE 86</td><td>0,497</td></tr>
+<tr><td>TABLE 43</td><td>TABLE 89</td><td>0,461</td></tr>
+<tr><td>TABLE 44</td><td>TABLE 41</td><td>0,233</td></tr>
+<tr><td>TABLE 44</td><td>TABLE 42</td><td>0,000</td></tr>
+<tr><td>TABLE 44</td><td>TABLE 43</td><td>0,000</td></tr>
+<tr><td>TABLE 44</td><td>TABLE 44</td><td>0,000</td></tr>
+<tr><td>TABLE 44</td><td>TABLE 45</td><td>0,000</td></tr>
+<tr><td>TABLE 44</td><td>TABLE 46</td><td>0,074</td></tr>
+<tr><td>TABLE 44</td><td>TABLE 47</td><td>0,074</td></tr>
+<tr><td>TABLE 44</td><td>TABLE 48</td><td>0,074</td></tr>
+<tr><td>TABLE 44</td><td>TABLE 49</td><td>0,114</td></tr>
+<tr><td>TABLE 44</td><td>TABLE 50</td><td>0,072</td></tr>
+<tr><td>TABLE 44</td><td>TABLE 81</td><td>0,469</td></tr>
+<tr><td>TABLE 44</td><td>TABLE 86</td><td>0,497</td></tr>
+<tr><td>TABLE 44</td><td>TABLE 89</td><td>0,461</td></tr>
+<tr><td>TABLE 45</td><td>TABLE 41</td><td>0,233</td></tr>
+<tr><td>TABLE 45</td><td>TABLE 42</td><td>0,000</td></tr>
+<tr><td>TABLE 45</td><td>TABLE 43</td><td>0,000</td></tr>
+<tr><td>TABLE 45</td><td>TABLE 44</td><td>0,000</td></tr>
+<tr><td>TABLE 45</td><td>TABLE 45</td><td>0,000</td></tr>
+<tr><td>TABLE 45</td><td>TABLE 46</td><td>0,074</td></tr>
+<tr><td>TABLE 45</td><td>TABLE 47</td><td>0,074</td></tr>
+<tr><td>TABLE 45</td><td>TABLE 48</td><td>0,074</td></tr>
+<tr><td>TABLE 45</td><td>TABLE 49</td><td>0,114</td></tr>
+<tr><td>TABLE 45</td><td>TABLE 50</td><td>0,072</td></tr>
+<tr><td>TABLE 45</td><td>TABLE 81</td><td>0,469</td></tr>
+<tr><td>TABLE 45</td><td>TABLE 86</td><td>0,497</td></tr>
+<tr><td>TABLE 45</td><td>TABLE 89</td><td>0,461</td></tr>
+<tr><td>TABLE 46</td><td>TABLE 41</td><td>0,251</td></tr>
+<tr><td>TABLE 46</td><td>TABLE 42</td><td>0,074</td></tr>
+<tr><td>TABLE 46</td><td>TABLE 43</td><td>0,074</td></tr>
+<tr><td>TABLE 46</td><td>TABLE 44</td><td>0,074</td></tr>
+<tr><td>TABLE 46</td><td>TABLE 45</td><td>0,074</td></tr>
+<tr><td>TABLE 46</td><td>TABLE 46</td><td>0,000</td></tr>
+<tr><td>TABLE 46</td><td>TABLE 47</td><td>0,000</td></tr>
+<tr><td>TABLE 46</td><td>TABLE 48</td><td>0,000</td></tr>
+<tr><td>TABLE 46</td><td>TABLE 49</td><td>0,094</td></tr>
+<tr><td>TABLE 46</td><td>TABLE 50</td><td>0,057</td></tr>
+<tr><td>TABLE 46</td><td>TABLE 81</td><td>0,426</td></tr>
+<tr><td>TABLE 46</td><td>TABLE 83</td><td>0,500</td></tr>
+<tr><td>TABLE 46</td><td>TABLE 85</td><td>0,497</td></tr>
+<tr><td>TABLE 46</td><td>TABLE 86</td><td>0,464</td></tr>
+<tr><td>TABLE 46</td><td>TABLE 89</td><td>0,429</td></tr>
+<tr><td>TABLE 47</td><td>TABLE 41</td><td>0,251</td></tr>
+<tr><td>TABLE 47</td><td>TABLE 42</td><td>0,074</td></tr>
+<tr><td>TABLE 47</td><td>TABLE 43</td><td>0,074</td></tr>
+<tr><td>TABLE 47</td><td>TABLE 44</td><td>0,074</td></tr>
+<tr><td>TABLE 47</td><td>TABLE 45</td><td>0,074</td></tr>
+<tr><td>TABLE 47</td><td>TABLE 46</td><td>0,000</td></tr>
+<tr><td>TABLE 47</td><td>TABLE 47</td><td>0,000</td></tr>
+<tr><td>TABLE 47</td><td>TABLE 48</td><td>0,000</td></tr>
+<tr><td>TABLE 47</td><td>TABLE 49</td><td>0,094</td></tr>
+<tr><td>TABLE 47</td><td>TABLE 50</td><td>0,057</td></tr>
+<tr><td>TABLE 47</td><td>TABLE 81</td><td>0,426</td></tr>
+<tr><td>TABLE 47</td><td>TABLE 83</td><td>0,500</td></tr>
+<tr><td>TABLE 47</td><td>TABLE 85</td><td>0,497</td></tr>
+<tr><td>TABLE 47</td><td>TABLE 86</td><td>0,464</td></tr>
+<tr><td>TABLE 47</td><td>TABLE 89</td><td>0,429</td></tr>
+<tr><td>TABLE 48</td><td>TABLE 41</td><td>0,251</td></tr>
+<tr><td>TABLE 48</td><td>TABLE 42</td><td>0,074</td></tr>
+<tr><td>TABLE 48</td><td>TABLE 43</td><td>0,074</td></tr>
+<tr><td>TABLE 48</td><td>TABLE 44</td><td>0,074</td></tr>
+<tr><td>TABLE 48</td><td>TABLE 45</td><td>0,074</td></tr>
+<tr><td>TABLE 48</td><td>TABLE 46</td><td>0,000</td></tr>
+<tr><td>TABLE 48</td><td>TABLE 47</td><td>0,000</td></tr>
+<tr><td>TABLE 48</td><td>TABLE 48</td><td>0,000</td></tr>
+<tr><td>TABLE 48</td><td>TABLE 49</td><td>0,094</td></tr>
+<tr><td>TABLE 48</td><td>TABLE 50</td><td>0,057</td></tr>
+<tr><td>TABLE 48</td><td>TABLE 81</td><td>0,426</td></tr>
+<tr><td>TABLE 48</td><td>TABLE 83</td><td>0,500</td></tr>
+<tr><td>TABLE 48</td><td>TABLE 85</td><td>0,497</td></tr>
+<tr><td>TABLE 48</td><td>TABLE 86</td><td>0,464</td></tr>
+<tr><td>TABLE 48</td><td>TABLE 89</td><td>0,429</td></tr>
+<tr><td>TABLE 49</td><td>TABLE 41</td><td>0,319</td></tr>
+<tr><td>TABLE 49</td><td>TABLE 42</td><td>0,114</td></tr>
+<tr><td>TABLE 49</td><td>TABLE 43</td><td>0,114</td></tr>
+<tr><td>TABLE 49</td><td>TABLE 44</td><td>0,114</td></tr>
+<tr><td>TABLE 49</td><td>TABLE 45</td><td>0,114</td></tr>
+<tr><td>TABLE 49</td><td>TABLE 46</td><td>0,094</td></tr>
+<tr><td>TABLE 49</td><td>TABLE 47</td><td>0,094</td></tr>
+<tr><td>TABLE 49</td><td>TABLE 48</td><td>0,094</td></tr>
+<tr><td>TABLE 49</td><td>TABLE 49</td><td>0,000</td></tr>
+<tr><td>TABLE 49</td><td>TABLE 50</td><td>0,058</td></tr>
+<tr><td>TABLE 49</td><td>TABLE 81</td><td>0,431</td></tr>
+<tr><td>TABLE 49</td><td>TABLE 85</td><td>0,500</td></tr>
+<tr><td>TABLE 49</td><td>TABLE 86</td><td>0,464</td></tr>
+<tr><td>TABLE 49</td><td>TABLE 89</td><td>0,454</td></tr>
+<tr><td>TABLE 50</td><td>TABLE 41</td><td>0,283</td></tr>
+<tr><td>TABLE 50</td><td>TABLE 42</td><td>0,072</td></tr>
+<tr><td>TABLE 50</td><td>TABLE 43</td><td>0,072</td></tr>
+<tr><td>TABLE 50</td><td>TABLE 44</td><td>0,072</td></tr>
+<tr><td>TABLE 50</td><td>TABLE 45</td><td>0,072</td></tr>
+<tr><td>TABLE 50</td><td>TABLE 46</td><td>0,057</td></tr>
+<tr><td>TABLE 50</td><td>TABLE 47</td><td>0,057</td></tr>
+<tr><td>TABLE 50</td><td>TABLE 48</td><td>0,057</td></tr>
+<tr><td>TABLE 50</td><td>TABLE 49</td><td>0,058</td></tr>
+<tr><td>TABLE 50</td><td>TABLE 50</td><td>0,000</td></tr>
+<tr><td>TABLE 50</td><td>TABLE 81</td><td>0,423</td></tr>
+<tr><td>TABLE 50</td><td>TABLE 83</td><td>0,495</td></tr>
+<tr><td>TABLE 50</td><td>TABLE 85</td><td>0,495</td></tr>
+<tr><td>TABLE 50</td><td>TABLE 86</td><td>0,453</td></tr>
+<tr><td>TABLE 50</td><td>TABLE 87</td><td>0,500</td></tr>
+<tr><td>TABLE 50</td><td>TABLE 89</td><td>0,434</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 1</td><td>0,484</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 2</td><td>0,461</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 3</td><td>0,461</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 6</td><td>0,489</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 8</td><td>0,356</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 11</td><td>0,420</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 12</td><td>0,426</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 13</td><td>0,426</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 15</td><td>0,467</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 16</td><td>0,483</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 19</td><td>0,416</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 20</td><td>0,386</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 51</td><td>0,000</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 52</td><td>0,236</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 53</td><td>0,219</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 54</td><td>0,106</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 55</td><td>0,246</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 56</td><td>0,135</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 57</td><td>0,205</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 58</td><td>0,323</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 59</td><td>0,183</td></tr>
+<tr><td>TABLE 51</td><td>TABLE 60</td><td>0,201</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 8</td><td>0,486</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 11</td><td>0,485</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 12</td><td>0,489</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 13</td><td>0,489</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 15</td><td>0,482</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 19</td><td>0,467</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 20</td><td>0,463</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 51</td><td>0,236</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 52</td><td>0,000</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 53</td><td>0,232</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 54</td><td>0,172</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 55</td><td>0,116</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 56</td><td>0,213</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 57</td><td>0,216</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 58</td><td>0,303</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 59</td><td>0,229</td></tr>
+<tr><td>TABLE 52</td><td>TABLE 60</td><td>0,149</td></tr>
+<tr><td>TABLE 53</td><td>TABLE 1</td><td>0,438</td></tr>
+<tr><td>TABLE 53</td><td>TABLE 2</td><td>0,462</td></tr>
+<tr><td>TABLE 53</td><td>TABLE 3</td><td>0,462</td></tr>
+<tr><td>TABLE 53</td><td>TABLE 8</td><td>0,397</td></tr>
+<tr><td>TABLE 53</td><td>TABLE 51</td><td>0,219</td></tr>
+<tr><td>TABLE 53</td><td>TABLE 52</td><td>0,232</td></tr>
+<tr><td>TABLE 53</td><td>TABLE 53</td><td>0,000</td></tr>
+<tr><td>TABLE 53</td><td>TABLE 54</td><td>0,164</td></tr>
+<tr><td>TABLE 53</td><td>TABLE 55</td><td>0,219</td></tr>
+<tr><td>TABLE 53</td><td>TABLE 56</td><td>0,159</td></tr>
+<tr><td>TABLE 53</td><td>TABLE 57</td><td>0,096</td></tr>
+<tr><td>TABLE 53</td><td>TABLE 58</td><td>0,223</td></tr>
+<tr><td>TABLE 53</td><td>TABLE 59</td><td>0,310</td></tr>
+<tr><td>TABLE 53</td><td>TABLE 60</td><td>0,129</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 2</td><td>0,490</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 3</td><td>0,490</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 8</td><td>0,384</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 11</td><td>0,450</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 12</td><td>0,447</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 13</td><td>0,447</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 15</td><td>0,474</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 19</td><td>0,440</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 20</td><td>0,410</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 51</td><td>0,106</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 52</td><td>0,172</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 53</td><td>0,164</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 54</td><td>0,000</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 55</td><td>0,167</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 56</td><td>0,094</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 57</td><td>0,133</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 58</td><td>0,264</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 59</td><td>0,164</td></tr>
+<tr><td>TABLE 54</td><td>TABLE 60</td><td>0,107</td></tr>
+<tr><td>TABLE 55</td><td>TABLE 8</td><td>0,465</td></tr>
+<tr><td>TABLE 55</td><td>TABLE 12</td><td>0,489</td></tr>
+<tr><td>TABLE 55</td><td>TABLE 13</td><td>0,489</td></tr>
+<tr><td>TABLE 55</td><td>TABLE 15</td><td>0,497</td></tr>
+<tr><td>TABLE 55</td><td>TABLE 19</td><td>0,480</td></tr>
+<tr><td>TABLE 55</td><td>TABLE 20</td><td>0,465</td></tr>
+<tr><td>TABLE 55</td><td>TABLE 51</td><td>0,246</td></tr>
+<tr><td>TABLE 55</td><td>TABLE 52</td><td>0,116</td></tr>
+<tr><td>TABLE 55</td><td>TABLE 53</td><td>0,219</td></tr>
+<tr><td>TABLE 55</td><td>TABLE 54</td><td>0,167</td></tr>
+<tr><td>TABLE 55</td><td>TABLE 55</td><td>0,000</td></tr>
+<tr><td>TABLE 55</td><td>TABLE 56</td><td>0,198</td></tr>
+<tr><td>TABLE 55</td><td>TABLE 57</td><td>0,180</td></tr>
+<tr><td>TABLE 55</td><td>TABLE 58</td><td>0,292</td></tr>
+<tr><td>TABLE 55</td><td>TABLE 59</td><td>0,243</td></tr>
+<tr><td>TABLE 55</td><td>TABLE 60</td><td>0,119</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 1</td><td>0,495</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 2</td><td>0,486</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 3</td><td>0,486</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 8</td><td>0,383</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 11</td><td>0,464</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 12</td><td>0,448</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 13</td><td>0,448</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 15</td><td>0,496</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 19</td><td>0,458</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 20</td><td>0,432</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 51</td><td>0,135</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 52</td><td>0,213</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 53</td><td>0,159</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 54</td><td>0,094</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 55</td><td>0,198</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 56</td><td>0,000</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 57</td><td>0,134</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 58</td><td>0,270</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 59</td><td>0,229</td></tr>
+<tr><td>TABLE 56</td><td>TABLE 60</td><td>0,132</td></tr>
+<tr><td>TABLE 57</td><td>TABLE 1</td><td>0,461</td></tr>
+<tr><td>TABLE 57</td><td>TABLE 2</td><td>0,484</td></tr>
+<tr><td>TABLE 57</td><td>TABLE 3</td><td>0,484</td></tr>
+<tr><td>TABLE 57</td><td>TABLE 8</td><td>0,421</td></tr>
+<tr><td>TABLE 57</td><td>TABLE 51</td><td>0,205</td></tr>
+<tr><td>TABLE 57</td><td>TABLE 52</td><td>0,216</td></tr>
+<tr><td>TABLE 57</td><td>TABLE 53</td><td>0,096</td></tr>
+<tr><td>TABLE 57</td><td>TABLE 54</td><td>0,133</td></tr>
+<tr><td>TABLE 57</td><td>TABLE 55</td><td>0,180</td></tr>
+<tr><td>TABLE 57</td><td>TABLE 56</td><td>0,134</td></tr>
+<tr><td>TABLE 57</td><td>TABLE 57</td><td>0,000</td></tr>
+<tr><td>TABLE 57</td><td>TABLE 58</td><td>0,196</td></tr>
+<tr><td>TABLE 57</td><td>TABLE 59</td><td>0,269</td></tr>
+<tr><td>TABLE 57</td><td>TABLE 60</td><td>0,091</td></tr>
+<tr><td>TABLE 58</td><td>TABLE 51</td><td>0,323</td></tr>
+<tr><td>TABLE 58</td><td>TABLE 52</td><td>0,303</td></tr>
+<tr><td>TABLE 58</td><td>TABLE 53</td><td>0,223</td></tr>
+<tr><td>TABLE 58</td><td>TABLE 54</td><td>0,264</td></tr>
+<tr><td>TABLE 58</td><td>TABLE 55</td><td>0,292</td></tr>
+<tr><td>TABLE 58</td><td>TABLE 56</td><td>0,270</td></tr>
+<tr><td>TABLE 58</td><td>TABLE 57</td><td>0,196</td></tr>
+<tr><td>TABLE 58</td><td>TABLE 58</td><td>0,000</td></tr>
+<tr><td>TABLE 58</td><td>TABLE 59</td><td>0,360</td></tr>
+<tr><td>TABLE 58</td><td>TABLE 60</td><td>0,239</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 8</td><td>0,425</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 11</td><td>0,344</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 12</td><td>0,369</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 13</td><td>0,369</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 14</td><td>0,447</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 15</td><td>0,351</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 16</td><td>0,407</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 18</td><td>0,405</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 19</td><td>0,334</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 20</td><td>0,301</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 51</td><td>0,183</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 52</td><td>0,229</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 53</td><td>0,310</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 54</td><td>0,164</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 55</td><td>0,243</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 56</td><td>0,229</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 57</td><td>0,269</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 58</td><td>0,360</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 59</td><td>0,000</td></tr>
+<tr><td>TABLE 59</td><td>TABLE 60</td><td>0,228</td></tr>
+<tr><td>TABLE 60</td><td>TABLE 1</td><td>0,497</td></tr>
+<tr><td>TABLE 60</td><td>TABLE 8</td><td>0,413</td></tr>
+<tr><td>TABLE 60</td><td>TABLE 12</td><td>0,497</td></tr>
+<tr><td>TABLE 60</td><td>TABLE 13</td><td>0,497</td></tr>
+<tr><td>TABLE 60</td><td>TABLE 19</td><td>0,499</td></tr>
+<tr><td>TABLE 60</td><td>TABLE 20</td><td>0,468</td></tr>
+<tr><td>TABLE 60</td><td>TABLE 51</td><td>0,201</td></tr>
+<tr><td>TABLE 60</td><td>TABLE 52</td><td>0,149</td></tr>
+<tr><td>TABLE 60</td><td>TABLE 53</td><td>0,129</td></tr>
+<tr><td>TABLE 60</td><td>TABLE 54</td><td>0,107</td></tr>
+<tr><td>TABLE 60</td><td>TABLE 55</td><td>0,119</td></tr>
+<tr><td>TABLE 60</td><td>TABLE 56</td><td>0,132</td></tr>
+<tr><td>TABLE 60</td><td>TABLE 57</td><td>0,091</td></tr>
+<tr><td>TABLE 60</td><td>TABLE 58</td><td>0,239</td></tr>
+<tr><td>TABLE 60</td><td>TABLE 59</td><td>0,228</td></tr>
+<tr><td>TABLE 60</td><td>TABLE 60</td><td>0,000</td></tr>
+<tr><td>TABLE 61</td><td>TABLE 31</td><td>0,471</td></tr>
+<tr><td>TABLE 61</td><td>TABLE 33</td><td>0,489</td></tr>
+<tr><td>TABLE 61</td><td>TABLE 34</td><td>0,428</td></tr>
+<tr><td>TABLE 61</td><td>TABLE 35</td><td>0,496</td></tr>
+<tr><td>TABLE 61</td><td>TABLE 36</td><td>0,485</td></tr>
+<tr><td>TABLE 61</td><td>TABLE 40</td><td>0,482</td></tr>
+<tr><td>TABLE 61</td><td>TABLE 61</td><td>0,000</td></tr>
+<tr><td>TABLE 61</td><td>TABLE 62</td><td>0,088</td></tr>
+<tr><td>TABLE 61</td><td>TABLE 63</td><td>0,263</td></tr>
+<tr><td>TABLE 61</td><td>TABLE 64</td><td>0,162</td></tr>
+<tr><td>TABLE 61</td><td>TABLE 65</td><td>0,174</td></tr>
+<tr><td>TABLE 61</td><td>TABLE 66</td><td>0,059</td></tr>
+<tr><td>TABLE 61</td><td>TABLE 67</td><td>0,059</td></tr>
+<tr><td>TABLE 61</td><td>TABLE 68</td><td>0,145</td></tr>
+<tr><td>TABLE 61</td><td>TABLE 69</td><td>0,145</td></tr>
+<tr><td>TABLE 61</td><td>TABLE 70</td><td>0,145</td></tr>
+<tr><td>TABLE 62</td><td>TABLE 34</td><td>0,496</td></tr>
+<tr><td>TABLE 62</td><td>TABLE 61</td><td>0,088</td></tr>
+<tr><td>TABLE 62</td><td>TABLE 62</td><td>0,000</td></tr>
+<tr><td>TABLE 62</td><td>TABLE 63</td><td>0,326</td></tr>
+<tr><td>TABLE 62</td><td>TABLE 64</td><td>0,217</td></tr>
+<tr><td>TABLE 62</td><td>TABLE 65</td><td>0,251</td></tr>
+<tr><td>TABLE 62</td><td>TABLE 66</td><td>0,060</td></tr>
+<tr><td>TABLE 62</td><td>TABLE 67</td><td>0,060</td></tr>
+<tr><td>TABLE 62</td><td>TABLE 68</td><td>0,223</td></tr>
+<tr><td>TABLE 62</td><td>TABLE 69</td><td>0,223</td></tr>
+<tr><td>TABLE 62</td><td>TABLE 70</td><td>0,223</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 31</td><td>0,379</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 32</td><td>0,414</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 33</td><td>0,389</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 34</td><td>0,326</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 35</td><td>0,408</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 36</td><td>0,375</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 37</td><td>0,377</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 38</td><td>0,341</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 39</td><td>0,434</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 40</td><td>0,344</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 61</td><td>0,263</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 62</td><td>0,326</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 63</td><td>0,000</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 64</td><td>0,213</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 65</td><td>0,130</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 66</td><td>0,308</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 67</td><td>0,308</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 68</td><td>0,158</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 69</td><td>0,158</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 70</td><td>0,158</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 113</td><td>0,466</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 114</td><td>0,418</td></tr>
+<tr><td>TABLE 63</td><td>TABLE 116</td><td>0,491</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 31</td><td>0,458</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 33</td><td>0,470</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 34</td><td>0,398</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 35</td><td>0,483</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 36</td><td>0,470</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 37</td><td>0,495</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 38</td><td>0,467</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 40</td><td>0,460</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 61</td><td>0,162</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 62</td><td>0,217</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 63</td><td>0,213</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 64</td><td>0,000</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 65</td><td>0,148</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 66</td><td>0,210</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 67</td><td>0,210</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 68</td><td>0,144</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 69</td><td>0,144</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 70</td><td>0,144</td></tr>
+<tr><td>TABLE 64</td><td>TABLE 114</td><td>0,459</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 31</td><td>0,397</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 32</td><td>0,433</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 33</td><td>0,412</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 34</td><td>0,348</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 35</td><td>0,424</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 36</td><td>0,407</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 37</td><td>0,425</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 38</td><td>0,396</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 39</td><td>0,480</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 40</td><td>0,382</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 61</td><td>0,174</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 62</td><td>0,251</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 63</td><td>0,130</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 64</td><td>0,148</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 65</td><td>0,000</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 66</td><td>0,225</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 67</td><td>0,225</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 68</td><td>0,074</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 69</td><td>0,074</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 70</td><td>0,074</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 113</td><td>0,493</td></tr>
+<tr><td>TABLE 65</td><td>TABLE 114</td><td>0,425</td></tr>
+<tr><td>TABLE 66</td><td>TABLE 34</td><td>0,463</td></tr>
+<tr><td>TABLE 66</td><td>TABLE 61</td><td>0,059</td></tr>
+<tr><td>TABLE 66</td><td>TABLE 62</td><td>0,060</td></tr>
+<tr><td>TABLE 66</td><td>TABLE 63</td><td>0,308</td></tr>
+<tr><td>TABLE 66</td><td>TABLE 64</td><td>0,210</td></tr>
+<tr><td>TABLE 66</td><td>TABLE 65</td><td>0,225</td></tr>
+<tr><td>TABLE 66</td><td>TABLE 66</td><td>0,000</td></tr>
+<tr><td>TABLE 66</td><td>TABLE 67</td><td>0,000</td></tr>
+<tr><td>TABLE 66</td><td>TABLE 68</td><td>0,199</td></tr>
+<tr><td>TABLE 66</td><td>TABLE 69</td><td>0,199</td></tr>
+<tr><td>TABLE 66</td><td>TABLE 70</td><td>0,199</td></tr>
+<tr><td>TABLE 67</td><td>TABLE 34</td><td>0,463</td></tr>
+<tr><td>TABLE 67</td><td>TABLE 61</td><td>0,059</td></tr>
+<tr><td>TABLE 67</td><td>TABLE 62</td><td>0,060</td></tr>
+<tr><td>TABLE 67</td><td>TABLE 63</td><td>0,308</td></tr>
+<tr><td>TABLE 67</td><td>TABLE 64</td><td>0,210</td></tr>
+<tr><td>TABLE 67</td><td>TABLE 65</td><td>0,225</td></tr>
+<tr><td>TABLE 67</td><td>TABLE 66</td><td>0,000</td></tr>
+<tr><td>TABLE 67</td><td>TABLE 67</td><td>0,000</td></tr>
+<tr><td>TABLE 67</td><td>TABLE 68</td><td>0,199</td></tr>
+<tr><td>TABLE 67</td><td>TABLE 69</td><td>0,199</td></tr>
+<tr><td>TABLE 67</td><td>TABLE 70</td><td>0,199</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 31</td><td>0,384</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 32</td><td>0,419</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 33</td><td>0,402</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 34</td><td>0,341</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 35</td><td>0,408</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 36</td><td>0,403</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 37</td><td>0,422</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 38</td><td>0,409</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 39</td><td>0,487</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 40</td><td>0,381</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 61</td><td>0,145</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 62</td><td>0,223</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 63</td><td>0,158</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 64</td><td>0,144</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 65</td><td>0,074</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 66</td><td>0,199</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 67</td><td>0,199</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 68</td><td>0,000</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 69</td><td>0,000</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 70</td><td>0,000</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 113</td><td>0,482</td></tr>
+<tr><td>TABLE 68</td><td>TABLE 114</td><td>0,412</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 31</td><td>0,384</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 32</td><td>0,419</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 33</td><td>0,402</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 34</td><td>0,341</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 35</td><td>0,408</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 36</td><td>0,403</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 37</td><td>0,422</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 38</td><td>0,409</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 39</td><td>0,487</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 40</td><td>0,381</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 61</td><td>0,145</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 62</td><td>0,223</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 63</td><td>0,158</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 64</td><td>0,144</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 65</td><td>0,074</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 66</td><td>0,199</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 67</td><td>0,199</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 68</td><td>0,000</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 69</td><td>0,000</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 70</td><td>0,000</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 113</td><td>0,482</td></tr>
+<tr><td>TABLE 69</td><td>TABLE 114</td><td>0,412</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 31</td><td>0,384</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 32</td><td>0,419</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 33</td><td>0,402</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 34</td><td>0,341</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 35</td><td>0,408</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 36</td><td>0,403</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 37</td><td>0,422</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 38</td><td>0,409</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 39</td><td>0,487</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 40</td><td>0,381</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 61</td><td>0,145</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 62</td><td>0,223</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 63</td><td>0,158</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 64</td><td>0,144</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 65</td><td>0,074</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 66</td><td>0,199</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 67</td><td>0,199</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 68</td><td>0,000</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 69</td><td>0,000</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 70</td><td>0,000</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 113</td><td>0,482</td></tr>
+<tr><td>TABLE 70</td><td>TABLE 114</td><td>0,412</td></tr>
+<tr><td>TABLE 71</td><td>TABLE 71</td><td>0,000</td></tr>
+<tr><td>TABLE 71</td><td>TABLE 72</td><td>0,158</td></tr>
+<tr><td>TABLE 71</td><td>TABLE 73</td><td>0,158</td></tr>
+<tr><td>TABLE 71</td><td>TABLE 74</td><td>0,158</td></tr>
+<tr><td>TABLE 71</td><td>TABLE 75</td><td>0,158</td></tr>
+<tr><td>TABLE 71</td><td>TABLE 76</td><td>0,195</td></tr>
+<tr><td>TABLE 71</td><td>TABLE 77</td><td>0,195</td></tr>
+<tr><td>TABLE 71</td><td>TABLE 78</td><td>0,179</td></tr>
+<tr><td>TABLE 71</td><td>TABLE 79</td><td>0,174</td></tr>
+<tr><td>TABLE 71</td><td>TABLE 80</td><td>0,174</td></tr>
+<tr><td>TABLE 72</td><td>TABLE 71</td><td>0,158</td></tr>
+<tr><td>TABLE 72</td><td>TABLE 72</td><td>0,000</td></tr>
+<tr><td>TABLE 72</td><td>TABLE 73</td><td>0,000</td></tr>
+<tr><td>TABLE 72</td><td>TABLE 74</td><td>0,000</td></tr>
+<tr><td>TABLE 72</td><td>TABLE 75</td><td>0,000</td></tr>
+<tr><td>TABLE 72</td><td>TABLE 76</td><td>0,109</td></tr>
+<tr><td>TABLE 72</td><td>TABLE 77</td><td>0,109</td></tr>
+<tr><td>TABLE 72</td><td>TABLE 78</td><td>0,141</td></tr>
+<tr><td>TABLE 72</td><td>TABLE 79</td><td>0,064</td></tr>
+<tr><td>TABLE 72</td><td>TABLE 80</td><td>0,064</td></tr>
+<tr><td>TABLE 73</td><td>TABLE 71</td><td>0,158</td></tr>
+<tr><td>TABLE 73</td><td>TABLE 72</td><td>0,000</td></tr>
+<tr><td>TABLE 73</td><td>TABLE 73</td><td>0,000</td></tr>
+<tr><td>TABLE 73</td><td>TABLE 74</td><td>0,000</td></tr>
+<tr><td>TABLE 73</td><td>TABLE 75</td><td>0,000</td></tr>
+<tr><td>TABLE 73</td><td>TABLE 76</td><td>0,109</td></tr>
+<tr><td>TABLE 73</td><td>TABLE 77</td><td>0,109</td></tr>
+<tr><td>TABLE 73</td><td>TABLE 78</td><td>0,141</td></tr>
+<tr><td>TABLE 73</td><td>TABLE 79</td><td>0,064</td></tr>
+<tr><td>TABLE 73</td><td>TABLE 80</td><td>0,064</td></tr>
+<tr><td>TABLE 74</td><td>TABLE 71</td><td>0,158</td></tr>
+<tr><td>TABLE 74</td><td>TABLE 72</td><td>0,000</td></tr>
+<tr><td>TABLE 74</td><td>TABLE 73</td><td>0,000</td></tr>
+<tr><td>TABLE 74</td><td>TABLE 74</td><td>0,000</td></tr>
+<tr><td>TABLE 74</td><td>TABLE 75</td><td>0,000</td></tr>
+<tr><td>TABLE 74</td><td>TABLE 76</td><td>0,109</td></tr>
+<tr><td>TABLE 74</td><td>TABLE 77</td><td>0,109</td></tr>
+<tr><td>TABLE 74</td><td>TABLE 78</td><td>0,141</td></tr>
+<tr><td>TABLE 74</td><td>TABLE 79</td><td>0,064</td></tr>
+<tr><td>TABLE 74</td><td>TABLE 80</td><td>0,064</td></tr>
+<tr><td>TABLE 75</td><td>TABLE 71</td><td>0,158</td></tr>
+<tr><td>TABLE 75</td><td>TABLE 72</td><td>0,000</td></tr>
+<tr><td>TABLE 75</td><td>TABLE 73</td><td>0,000</td></tr>
+<tr><td>TABLE 75</td><td>TABLE 74</td><td>0,000</td></tr>
+<tr><td>TABLE 75</td><td>TABLE 75</td><td>0,000</td></tr>
+<tr><td>TABLE 75</td><td>TABLE 76</td><td>0,109</td></tr>
+<tr><td>TABLE 75</td><td>TABLE 77</td><td>0,109</td></tr>
+<tr><td>TABLE 75</td><td>TABLE 78</td><td>0,141</td></tr>
+<tr><td>TABLE 75</td><td>TABLE 79</td><td>0,064</td></tr>
+<tr><td>TABLE 75</td><td>TABLE 80</td><td>0,064</td></tr>
+<tr><td>TABLE 76</td><td>TABLE 71</td><td>0,195</td></tr>
+<tr><td>TABLE 76</td><td>TABLE 72</td><td>0,109</td></tr>
+<tr><td>TABLE 76</td><td>TABLE 73</td><td>0,109</td></tr>
+<tr><td>TABLE 76</td><td>TABLE 74</td><td>0,109</td></tr>
+<tr><td>TABLE 76</td><td>TABLE 75</td><td>0,109</td></tr>
+<tr><td>TABLE 76</td><td>TABLE 76</td><td>0,000</td></tr>
+<tr><td>TABLE 76</td><td>TABLE 77</td><td>0,000</td></tr>
+<tr><td>TABLE 76</td><td>TABLE 78</td><td>0,170</td></tr>
+<tr><td>TABLE 76</td><td>TABLE 79</td><td>0,139</td></tr>
+<tr><td>TABLE 76</td><td>TABLE 80</td><td>0,139</td></tr>
+<tr><td>TABLE 77</td><td>TABLE 71</td><td>0,195</td></tr>
+<tr><td>TABLE 77</td><td>TABLE 72</td><td>0,109</td></tr>
+<tr><td>TABLE 77</td><td>TABLE 73</td><td>0,109</td></tr>
+<tr><td>TABLE 77</td><td>TABLE 74</td><td>0,109</td></tr>
+<tr><td>TABLE 77</td><td>TABLE 75</td><td>0,109</td></tr>
+<tr><td>TABLE 77</td><td>TABLE 76</td><td>0,000</td></tr>
+<tr><td>TABLE 77</td><td>TABLE 77</td><td>0,000</td></tr>
+<tr><td>TABLE 77</td><td>TABLE 78</td><td>0,170</td></tr>
+<tr><td>TABLE 77</td><td>TABLE 79</td><td>0,139</td></tr>
+<tr><td>TABLE 77</td><td>TABLE 80</td><td>0,139</td></tr>
+<tr><td>TABLE 78</td><td>TABLE 71</td><td>0,179</td></tr>
+<tr><td>TABLE 78</td><td>TABLE 72</td><td>0,141</td></tr>
+<tr><td>TABLE 78</td><td>TABLE 73</td><td>0,141</td></tr>
+<tr><td>TABLE 78</td><td>TABLE 74</td><td>0,141</td></tr>
+<tr><td>TABLE 78</td><td>TABLE 75</td><td>0,141</td></tr>
+<tr><td>TABLE 78</td><td>TABLE 76</td><td>0,170</td></tr>
+<tr><td>TABLE 78</td><td>TABLE 77</td><td>0,170</td></tr>
+<tr><td>TABLE 78</td><td>TABLE 78</td><td>0,000</td></tr>
+<tr><td>TABLE 78</td><td>TABLE 79</td><td>0,146</td></tr>
+<tr><td>TABLE 78</td><td>TABLE 80</td><td>0,146</td></tr>
+<tr><td>TABLE 79</td><td>TABLE 71</td><td>0,174</td></tr>
+<tr><td>TABLE 79</td><td>TABLE 72</td><td>0,064</td></tr>
+<tr><td>TABLE 79</td><td>TABLE 73</td><td>0,064</td></tr>
+<tr><td>TABLE 79</td><td>TABLE 74</td><td>0,064</td></tr>
+<tr><td>TABLE 79</td><td>TABLE 75</td><td>0,064</td></tr>
+<tr><td>TABLE 79</td><td>TABLE 76</td><td>0,139</td></tr>
+<tr><td>TABLE 79</td><td>TABLE 77</td><td>0,139</td></tr>
+<tr><td>TABLE 79</td><td>TABLE 78</td><td>0,146</td></tr>
+<tr><td>TABLE 79</td><td>TABLE 79</td><td>0,000</td></tr>
+<tr><td>TABLE 79</td><td>TABLE 80</td><td>0,000</td></tr>
+<tr><td>TABLE 80</td><td>TABLE 71</td><td>0,174</td></tr>
+<tr><td>TABLE 80</td><td>TABLE 72</td><td>0,064</td></tr>
+<tr><td>TABLE 80</td><td>TABLE 73</td><td>0,064</td></tr>
+<tr><td>TABLE 80</td><td>TABLE 74</td><td>0,064</td></tr>
+<tr><td>TABLE 80</td><td>TABLE 75</td><td>0,064</td></tr>
+<tr><td>TABLE 80</td><td>TABLE 76</td><td>0,139</td></tr>
+<tr><td>TABLE 80</td><td>TABLE 77</td><td>0,139</td></tr>
+<tr><td>TABLE 80</td><td>TABLE 78</td><td>0,146</td></tr>
+<tr><td>TABLE 80</td><td>TABLE 79</td><td>0,000</td></tr>
+<tr><td>TABLE 80</td><td>TABLE 80</td><td>0,000</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 42</td><td>0,469</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 43</td><td>0,469</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 44</td><td>0,469</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 45</td><td>0,469</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 46</td><td>0,426</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 47</td><td>0,426</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 48</td><td>0,426</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 49</td><td>0,431</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 50</td><td>0,423</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 81</td><td>0,000</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 82</td><td>0,282</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 83</td><td>0,177</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 84</td><td>0,192</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 85</td><td>0,231</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 86</td><td>0,112</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 87</td><td>0,193</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 88</td><td>0,283</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 89</td><td>0,141</td></tr>
+<tr><td>TABLE 81</td><td>TABLE 90</td><td>0,297</td></tr>
+<tr><td>TABLE 82</td><td>TABLE 81</td><td>0,282</td></tr>
+<tr><td>TABLE 82</td><td>TABLE 82</td><td>0,000</td></tr>
+<tr><td>TABLE 82</td><td>TABLE 83</td><td>0,209</td></tr>
+<tr><td>TABLE 82</td><td>TABLE 84</td><td>0,287</td></tr>
+<tr><td>TABLE 82</td><td>TABLE 85</td><td>0,208</td></tr>
+<tr><td>TABLE 82</td><td>TABLE 86</td><td>0,237</td></tr>
+<tr><td>TABLE 82</td><td>TABLE 87</td><td>0,181</td></tr>
+<tr><td>TABLE 82</td><td>TABLE 88</td><td>0,268</td></tr>
+<tr><td>TABLE 82</td><td>TABLE 89</td><td>0,330</td></tr>
+<tr><td>TABLE 82</td><td>TABLE 90</td><td>0,279</td></tr>
+<tr><td>TABLE 83</td><td>TABLE 46</td><td>0,500</td></tr>
+<tr><td>TABLE 83</td><td>TABLE 47</td><td>0,500</td></tr>
+<tr><td>TABLE 83</td><td>TABLE 48</td><td>0,500</td></tr>
+<tr><td>TABLE 83</td><td>TABLE 50</td><td>0,495</td></tr>
+<tr><td>TABLE 83</td><td>TABLE 81</td><td>0,177</td></tr>
+<tr><td>TABLE 83</td><td>TABLE 82</td><td>0,209</td></tr>
+<tr><td>TABLE 83</td><td>TABLE 83</td><td>0,000</td></tr>
+<tr><td>TABLE 83</td><td>TABLE 84</td><td>0,200</td></tr>
+<tr><td>TABLE 83</td><td>TABLE 85</td><td>0,151</td></tr>
+<tr><td>TABLE 83</td><td>TABLE 86</td><td>0,134</td></tr>
+<tr><td>TABLE 83</td><td>TABLE 87</td><td>0,057</td></tr>
+<tr><td>TABLE 83</td><td>TABLE 88</td><td>0,185</td></tr>
+<tr><td>TABLE 83</td><td>TABLE 89</td><td>0,149</td></tr>
+<tr><td>TABLE 83</td><td>TABLE 90</td><td>0,199</td></tr>
+<tr><td>TABLE 84</td><td>TABLE 81</td><td>0,192</td></tr>
+<tr><td>TABLE 84</td><td>TABLE 82</td><td>0,287</td></tr>
+<tr><td>TABLE 84</td><td>TABLE 83</td><td>0,200</td></tr>
+<tr><td>TABLE 84</td><td>TABLE 84</td><td>0,000</td></tr>
+<tr><td>TABLE 84</td><td>TABLE 85</td><td>0,313</td></tr>
+<tr><td>TABLE 84</td><td>TABLE 86</td><td>0,135</td></tr>
+<tr><td>TABLE 84</td><td>TABLE 87</td><td>0,215</td></tr>
+<tr><td>TABLE 84</td><td>TABLE 88</td><td>0,368</td></tr>
+<tr><td>TABLE 84</td><td>TABLE 89</td><td>0,233</td></tr>
+<tr><td>TABLE 84</td><td>TABLE 90</td><td>0,380</td></tr>
+<tr><td>TABLE 85</td><td>TABLE 46</td><td>0,497</td></tr>
+<tr><td>TABLE 85</td><td>TABLE 47</td><td>0,497</td></tr>
+<tr><td>TABLE 85</td><td>TABLE 48</td><td>0,497</td></tr>
+<tr><td>TABLE 85</td><td>TABLE 49</td><td>0,500</td></tr>
+<tr><td>TABLE 85</td><td>TABLE 50</td><td>0,495</td></tr>
+<tr><td>TABLE 85</td><td>TABLE 81</td><td>0,231</td></tr>
+<tr><td>TABLE 85</td><td>TABLE 82</td><td>0,208</td></tr>
+<tr><td>TABLE 85</td><td>TABLE 83</td><td>0,151</td></tr>
+<tr><td>TABLE 85</td><td>TABLE 84</td><td>0,313</td></tr>
+<tr><td>TABLE 85</td><td>TABLE 85</td><td>0,000</td></tr>
+<tr><td>TABLE 85</td><td>TABLE 86</td><td>0,220</td></tr>
+<tr><td>TABLE 85</td><td>TABLE 87</td><td>0,160</td></tr>
+<tr><td>TABLE 85</td><td>TABLE 88</td><td>0,082</td></tr>
+<tr><td>TABLE 85</td><td>TABLE 89</td><td>0,227</td></tr>
+<tr><td>TABLE 85</td><td>TABLE 90</td><td>0,091</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 42</td><td>0,497</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 43</td><td>0,497</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 44</td><td>0,497</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 45</td><td>0,497</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 46</td><td>0,464</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 47</td><td>0,464</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 48</td><td>0,464</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 49</td><td>0,464</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 50</td><td>0,453</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 81</td><td>0,112</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 82</td><td>0,237</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 83</td><td>0,134</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 84</td><td>0,135</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 85</td><td>0,220</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 86</td><td>0,000</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 87</td><td>0,151</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 88</td><td>0,278</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 89</td><td>0,170</td></tr>
+<tr><td>TABLE 86</td><td>TABLE 90</td><td>0,291</td></tr>
+<tr><td>TABLE 87</td><td>TABLE 50</td><td>0,500</td></tr>
+<tr><td>TABLE 87</td><td>TABLE 81</td><td>0,193</td></tr>
+<tr><td>TABLE 87</td><td>TABLE 82</td><td>0,181</td></tr>
+<tr><td>TABLE 87</td><td>TABLE 83</td><td>0,057</td></tr>
+<tr><td>TABLE 87</td><td>TABLE 84</td><td>0,215</td></tr>
+<tr><td>TABLE 87</td><td>TABLE 85</td><td>0,160</td></tr>
+<tr><td>TABLE 87</td><td>TABLE 86</td><td>0,151</td></tr>
+<tr><td>TABLE 87</td><td>TABLE 87</td><td>0,000</td></tr>
+<tr><td>TABLE 87</td><td>TABLE 88</td><td>0,195</td></tr>
+<tr><td>TABLE 87</td><td>TABLE 89</td><td>0,179</td></tr>
+<tr><td>TABLE 87</td><td>TABLE 90</td><td>0,211</td></tr>
+<tr><td>TABLE 88</td><td>TABLE 81</td><td>0,283</td></tr>
+<tr><td>TABLE 88</td><td>TABLE 82</td><td>0,268</td></tr>
+<tr><td>TABLE 88</td><td>TABLE 83</td><td>0,185</td></tr>
+<tr><td>TABLE 88</td><td>TABLE 84</td><td>0,368</td></tr>
+<tr><td>TABLE 88</td><td>TABLE 85</td><td>0,082</td></tr>
+<tr><td>TABLE 88</td><td>TABLE 86</td><td>0,278</td></tr>
+<tr><td>TABLE 88</td><td>TABLE 87</td><td>0,195</td></tr>
+<tr><td>TABLE 88</td><td>TABLE 88</td><td>0,000</td></tr>
+<tr><td>TABLE 88</td><td>TABLE 89</td><td>0,242</td></tr>
+<tr><td>TABLE 88</td><td>TABLE 90</td><td>0,020</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 42</td><td>0,461</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 43</td><td>0,461</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 44</td><td>0,461</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 45</td><td>0,461</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 46</td><td>0,429</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 47</td><td>0,429</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 48</td><td>0,429</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 49</td><td>0,454</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 50</td><td>0,434</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 81</td><td>0,141</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 82</td><td>0,330</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 83</td><td>0,149</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 84</td><td>0,233</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 85</td><td>0,227</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 86</td><td>0,170</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 87</td><td>0,179</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 88</td><td>0,242</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 89</td><td>0,000</td></tr>
+<tr><td>TABLE 89</td><td>TABLE 90</td><td>0,256</td></tr>
+<tr><td>TABLE 90</td><td>TABLE 81</td><td>0,297</td></tr>
+<tr><td>TABLE 90</td><td>TABLE 82</td><td>0,279</td></tr>
+<tr><td>TABLE 90</td><td>TABLE 83</td><td>0,199</td></tr>
+<tr><td>TABLE 90</td><td>TABLE 84</td><td>0,380</td></tr>
+<tr><td>TABLE 90</td><td>TABLE 85</td><td>0,091</td></tr>
+<tr><td>TABLE 90</td><td>TABLE 86</td><td>0,291</td></tr>
+<tr><td>TABLE 90</td><td>TABLE 87</td><td>0,211</td></tr>
+<tr><td>TABLE 90</td><td>TABLE 88</td><td>0,020</td></tr>
+<tr><td>TABLE 90</td><td>TABLE 89</td><td>0,256</td></tr>
+<tr><td>TABLE 90</td><td>TABLE 90</td><td>0,000</td></tr>
+<tr><td>TABLE 91</td><td>TABLE 91</td><td>0,000</td></tr>
+<tr><td>TABLE 91</td><td>TABLE 92</td><td>0,190</td></tr>
+<tr><td>TABLE 91</td><td>TABLE 93</td><td>0,198</td></tr>
+<tr><td>TABLE 91</td><td>TABLE 94</td><td>0,195</td></tr>
+<tr><td>TABLE 91</td><td>TABLE 95</td><td>0,291</td></tr>
+<tr><td>TABLE 91</td><td>TABLE 96</td><td>0,247</td></tr>
+<tr><td>TABLE 91</td><td>TABLE 97</td><td>0,284</td></tr>
+<tr><td>TABLE 91</td><td>TABLE 99</td><td>0,446</td></tr>
+<tr><td>TABLE 91</td><td>TABLE 100</td><td>0,194</td></tr>
+<tr><td>TABLE 92</td><td>TABLE 91</td><td>0,190</td></tr>
+<tr><td>TABLE 92</td><td>TABLE 92</td><td>0,000</td></tr>
+<tr><td>TABLE 92</td><td>TABLE 93</td><td>0,148</td></tr>
+<tr><td>TABLE 92</td><td>TABLE 94</td><td>0,203</td></tr>
+<tr><td>TABLE 92</td><td>TABLE 95</td><td>0,390</td></tr>
+<tr><td>TABLE 92</td><td>TABLE 96</td><td>0,247</td></tr>
+<tr><td>TABLE 92</td><td>TABLE 97</td><td>0,334</td></tr>
+<tr><td>TABLE 92</td><td>TABLE 98</td><td>0,449</td></tr>
+<tr><td>TABLE 92</td><td>TABLE 99</td><td>0,350</td></tr>
+<tr><td>TABLE 92</td><td>TABLE 100</td><td>0,173</td></tr>
+<tr><td>TABLE 93</td><td>TABLE 91</td><td>0,198</td></tr>
+<tr><td>TABLE 93</td><td>TABLE 92</td><td>0,148</td></tr>
+<tr><td>TABLE 93</td><td>TABLE 93</td><td>0,000</td></tr>
+<tr><td>TABLE 93</td><td>TABLE 94</td><td>0,156</td></tr>
+<tr><td>TABLE 93</td><td>TABLE 95</td><td>0,313</td></tr>
+<tr><td>TABLE 93</td><td>TABLE 96</td><td>0,184</td></tr>
+<tr><td>TABLE 93</td><td>TABLE 97</td><td>0,254</td></tr>
+<tr><td>TABLE 93</td><td>TABLE 98</td><td>0,374</td></tr>
+<tr><td>TABLE 93</td><td>TABLE 99</td><td>0,314</td></tr>
+<tr><td>TABLE 93</td><td>TABLE 100</td><td>0,102</td></tr>
+<tr><td>TABLE 94</td><td>TABLE 91</td><td>0,195</td></tr>
+<tr><td>TABLE 94</td><td>TABLE 92</td><td>0,203</td></tr>
+<tr><td>TABLE 94</td><td>TABLE 93</td><td>0,156</td></tr>
+<tr><td>TABLE 94</td><td>TABLE 94</td><td>0,000</td></tr>
+<tr><td>TABLE 94</td><td>TABLE 95</td><td>0,248</td></tr>
+<tr><td>TABLE 94</td><td>TABLE 96</td><td>0,144</td></tr>
+<tr><td>TABLE 94</td><td>TABLE 97</td><td>0,183</td></tr>
+<tr><td>TABLE 94</td><td>TABLE 98</td><td>0,355</td></tr>
+<tr><td>TABLE 94</td><td>TABLE 99</td><td>0,290</td></tr>
+<tr><td>TABLE 94</td><td>TABLE 100</td><td>0,105</td></tr>
+<tr><td>TABLE 95</td><td>TABLE 91</td><td>0,291</td></tr>
+<tr><td>TABLE 95</td><td>TABLE 92</td><td>0,390</td></tr>
+<tr><td>TABLE 95</td><td>TABLE 93</td><td>0,313</td></tr>
+<tr><td>TABLE 95</td><td>TABLE 94</td><td>0,248</td></tr>
+<tr><td>TABLE 95</td><td>TABLE 95</td><td>0,000</td></tr>
+<tr><td>TABLE 95</td><td>TABLE 96</td><td>0,204</td></tr>
+<tr><td>TABLE 95</td><td>TABLE 97</td><td>0,144</td></tr>
+<tr><td>TABLE 95</td><td>TABLE 98</td><td>0,401</td></tr>
+<tr><td>TABLE 95</td><td>TABLE 99</td><td>0,417</td></tr>
+<tr><td>TABLE 95</td><td>TABLE 100</td><td>0,244</td></tr>
+<tr><td>TABLE 96</td><td>TABLE 91</td><td>0,247</td></tr>
+<tr><td>TABLE 96</td><td>TABLE 92</td><td>0,247</td></tr>
+<tr><td>TABLE 96</td><td>TABLE 93</td><td>0,184</td></tr>
+<tr><td>TABLE 96</td><td>TABLE 94</td><td>0,144</td></tr>
+<tr><td>TABLE 96</td><td>TABLE 95</td><td>0,204</td></tr>
+<tr><td>TABLE 96</td><td>TABLE 96</td><td>0,000</td></tr>
+<tr><td>TABLE 96</td><td>TABLE 97</td><td>0,152</td></tr>
+<tr><td>TABLE 96</td><td>TABLE 98</td><td>0,344</td></tr>
+<tr><td>TABLE 96</td><td>TABLE 99</td><td>0,270</td></tr>
+<tr><td>TABLE 96</td><td>TABLE 100</td><td>0,094</td></tr>
+<tr><td>TABLE 97</td><td>TABLE 91</td><td>0,284</td></tr>
+<tr><td>TABLE 97</td><td>TABLE 92</td><td>0,334</td></tr>
+<tr><td>TABLE 97</td><td>TABLE 93</td><td>0,254</td></tr>
+<tr><td>TABLE 97</td><td>TABLE 94</td><td>0,183</td></tr>
+<tr><td>TABLE 97</td><td>TABLE 95</td><td>0,144</td></tr>
+<tr><td>TABLE 97</td><td>TABLE 96</td><td>0,152</td></tr>
+<tr><td>TABLE 97</td><td>TABLE 97</td><td>0,000</td></tr>
+<tr><td>TABLE 97</td><td>TABLE 98</td><td>0,308</td></tr>
+<tr><td>TABLE 97</td><td>TABLE 99</td><td>0,317</td></tr>
+<tr><td>TABLE 97</td><td>TABLE 100</td><td>0,181</td></tr>
+<tr><td>TABLE 98</td><td>TABLE 92</td><td>0,449</td></tr>
+<tr><td>TABLE 98</td><td>TABLE 93</td><td>0,374</td></tr>
+<tr><td>TABLE 98</td><td>TABLE 94</td><td>0,355</td></tr>
+<tr><td>TABLE 98</td><td>TABLE 95</td><td>0,401</td></tr>
+<tr><td>TABLE 98</td><td>TABLE 96</td><td>0,344</td></tr>
+<tr><td>TABLE 98</td><td>TABLE 97</td><td>0,308</td></tr>
+<tr><td>TABLE 98</td><td>TABLE 98</td><td>0,000</td></tr>
+<tr><td>TABLE 98</td><td>TABLE 99</td><td>0,242</td></tr>
+<tr><td>TABLE 98</td><td>TABLE 100</td><td>0,341</td></tr>
+<tr><td>TABLE 99</td><td>TABLE 91</td><td>0,446</td></tr>
+<tr><td>TABLE 99</td><td>TABLE 92</td><td>0,350</td></tr>
+<tr><td>TABLE 99</td><td>TABLE 93</td><td>0,314</td></tr>
+<tr><td>TABLE 99</td><td>TABLE 94</td><td>0,290</td></tr>
+<tr><td>TABLE 99</td><td>TABLE 95</td><td>0,417</td></tr>
+<tr><td>TABLE 99</td><td>TABLE 96</td><td>0,270</td></tr>
+<tr><td>TABLE 99</td><td>TABLE 97</td><td>0,317</td></tr>
+<tr><td>TABLE 99</td><td>TABLE 98</td><td>0,242</td></tr>
+<tr><td>TABLE 99</td><td>TABLE 99</td><td>0,000</td></tr>
+<tr><td>TABLE 99</td><td>TABLE 100</td><td>0,270</td></tr>
+<tr><td>TABLE 100</td><td>TABLE 91</td><td>0,194</td></tr>
+<tr><td>TABLE 100</td><td>TABLE 92</td><td>0,173</td></tr>
+<tr><td>TABLE 100</td><td>TABLE 93</td><td>0,102</td></tr>
+<tr><td>TABLE 100</td><td>TABLE 94</td><td>0,105</td></tr>
+<tr><td>TABLE 100</td><td>TABLE 95</td><td>0,244</td></tr>
+<tr><td>TABLE 100</td><td>TABLE 96</td><td>0,094</td></tr>
+<tr><td>TABLE 100</td><td>TABLE 97</td><td>0,181</td></tr>
+<tr><td>TABLE 100</td><td>TABLE 98</td><td>0,341</td></tr>
+<tr><td>TABLE 100</td><td>TABLE 99</td><td>0,270</td></tr>
+<tr><td>TABLE 100</td><td>TABLE 100</td><td>0,000</td></tr>
+<tr><td>TABLE 101</td><td>TABLE 101</td><td>0,000</td></tr>
+<tr><td>TABLE 101</td><td>TABLE 102</td><td>0,212</td></tr>
+<tr><td>TABLE 101</td><td>TABLE 103</td><td>0,130</td></tr>
+<tr><td>TABLE 101</td><td>TABLE 104</td><td>0,130</td></tr>
+<tr><td>TABLE 101</td><td>TABLE 105</td><td>0,046</td></tr>
+<tr><td>TABLE 101</td><td>TABLE 106</td><td>0,046</td></tr>
+<tr><td>TABLE 101</td><td>TABLE 107</td><td>0,046</td></tr>
+<tr><td>TABLE 101</td><td>TABLE 108</td><td>0,055</td></tr>
+<tr><td>TABLE 101</td><td>TABLE 109</td><td>0,096</td></tr>
+<tr><td>TABLE 101</td><td>TABLE 110</td><td>0,467</td></tr>
+<tr><td>TABLE 102</td><td>TABLE 101</td><td>0,212</td></tr>
+<tr><td>TABLE 102</td><td>TABLE 102</td><td>0,000</td></tr>
+<tr><td>TABLE 102</td><td>TABLE 103</td><td>0,123</td></tr>
+<tr><td>TABLE 102</td><td>TABLE 104</td><td>0,123</td></tr>
+<tr><td>TABLE 102</td><td>TABLE 105</td><td>0,194</td></tr>
+<tr><td>TABLE 102</td><td>TABLE 106</td><td>0,194</td></tr>
+<tr><td>TABLE 102</td><td>TABLE 107</td><td>0,194</td></tr>
+<tr><td>TABLE 102</td><td>TABLE 108</td><td>0,202</td></tr>
+<tr><td>TABLE 102</td><td>TABLE 109</td><td>0,136</td></tr>
+<tr><td>TABLE 103</td><td>TABLE 101</td><td>0,130</td></tr>
+<tr><td>TABLE 103</td><td>TABLE 102</td><td>0,123</td></tr>
+<tr><td>TABLE 103</td><td>TABLE 103</td><td>0,000</td></tr>
+<tr><td>TABLE 103</td><td>TABLE 104</td><td>0,000</td></tr>
+<tr><td>TABLE 103</td><td>TABLE 105</td><td>0,100</td></tr>
+<tr><td>TABLE 103</td><td>TABLE 106</td><td>0,100</td></tr>
+<tr><td>TABLE 103</td><td>TABLE 107</td><td>0,100</td></tr>
+<tr><td>TABLE 103</td><td>TABLE 108</td><td>0,106</td></tr>
+<tr><td>TABLE 103</td><td>TABLE 109</td><td>0,050</td></tr>
+<tr><td>TABLE 103</td><td>TABLE 110</td><td>0,481</td></tr>
+<tr><td>TABLE 104</td><td>TABLE 101</td><td>0,130</td></tr>
+<tr><td>TABLE 104</td><td>TABLE 102</td><td>0,123</td></tr>
+<tr><td>TABLE 104</td><td>TABLE 103</td><td>0,000</td></tr>
+<tr><td>TABLE 104</td><td>TABLE 104</td><td>0,000</td></tr>
+<tr><td>TABLE 104</td><td>TABLE 105</td><td>0,100</td></tr>
+<tr><td>TABLE 104</td><td>TABLE 106</td><td>0,100</td></tr>
+<tr><td>TABLE 104</td><td>TABLE 107</td><td>0,100</td></tr>
+<tr><td>TABLE 104</td><td>TABLE 108</td><td>0,106</td></tr>
+<tr><td>TABLE 104</td><td>TABLE 109</td><td>0,050</td></tr>
+<tr><td>TABLE 104</td><td>TABLE 110</td><td>0,481</td></tr>
+<tr><td>TABLE 105</td><td>TABLE 101</td><td>0,046</td></tr>
+<tr><td>TABLE 105</td><td>TABLE 102</td><td>0,194</td></tr>
+<tr><td>TABLE 105</td><td>TABLE 103</td><td>0,100</td></tr>
+<tr><td>TABLE 105</td><td>TABLE 104</td><td>0,100</td></tr>
+<tr><td>TABLE 105</td><td>TABLE 105</td><td>0,000</td></tr>
+<tr><td>TABLE 105</td><td>TABLE 106</td><td>0,000</td></tr>
+<tr><td>TABLE 105</td><td>TABLE 107</td><td>0,000</td></tr>
+<tr><td>TABLE 105</td><td>TABLE 108</td><td>0,029</td></tr>
+<tr><td>TABLE 105</td><td>TABLE 109</td><td>0,076</td></tr>
+<tr><td>TABLE 105</td><td>TABLE 110</td><td>0,452</td></tr>
+<tr><td>TABLE 106</td><td>TABLE 101</td><td>0,046</td></tr>
+<tr><td>TABLE 106</td><td>TABLE 102</td><td>0,194</td></tr>
+<tr><td>TABLE 106</td><td>TABLE 103</td><td>0,100</td></tr>
+<tr><td>TABLE 106</td><td>TABLE 104</td><td>0,100</td></tr>
+<tr><td>TABLE 106</td><td>TABLE 105</td><td>0,000</td></tr>
+<tr><td>TABLE 106</td><td>TABLE 106</td><td>0,000</td></tr>
+<tr><td>TABLE 106</td><td>TABLE 107</td><td>0,000</td></tr>
+<tr><td>TABLE 106</td><td>TABLE 108</td><td>0,029</td></tr>
+<tr><td>TABLE 106</td><td>TABLE 109</td><td>0,076</td></tr>
+<tr><td>TABLE 106</td><td>TABLE 110</td><td>0,452</td></tr>
+<tr><td>TABLE 107</td><td>TABLE 101</td><td>0,046</td></tr>
+<tr><td>TABLE 107</td><td>TABLE 102</td><td>0,194</td></tr>
+<tr><td>TABLE 107</td><td>TABLE 103</td><td>0,100</td></tr>
+<tr><td>TABLE 107</td><td>TABLE 104</td><td>0,100</td></tr>
+<tr><td>TABLE 107</td><td>TABLE 105</td><td>0,000</td></tr>
+<tr><td>TABLE 107</td><td>TABLE 106</td><td>0,000</td></tr>
+<tr><td>TABLE 107</td><td>TABLE 107</td><td>0,000</td></tr>
+<tr><td>TABLE 107</td><td>TABLE 108</td><td>0,029</td></tr>
+<tr><td>TABLE 107</td><td>TABLE 109</td><td>0,076</td></tr>
+<tr><td>TABLE 107</td><td>TABLE 110</td><td>0,452</td></tr>
+<tr><td>TABLE 108</td><td>TABLE 101</td><td>0,055</td></tr>
+<tr><td>TABLE 108</td><td>TABLE 102</td><td>0,202</td></tr>
+<tr><td>TABLE 108</td><td>TABLE 103</td><td>0,106</td></tr>
+<tr><td>TABLE 108</td><td>TABLE 104</td><td>0,106</td></tr>
+<tr><td>TABLE 108</td><td>TABLE 105</td><td>0,029</td></tr>
+<tr><td>TABLE 108</td><td>TABLE 106</td><td>0,029</td></tr>
+<tr><td>TABLE 108</td><td>TABLE 107</td><td>0,029</td></tr>
+<tr><td>TABLE 108</td><td>TABLE 108</td><td>0,000</td></tr>
+<tr><td>TABLE 108</td><td>TABLE 109</td><td>0,077</td></tr>
+<tr><td>TABLE 108</td><td>TABLE 110</td><td>0,462</td></tr>
+<tr><td>TABLE 109</td><td>TABLE 101</td><td>0,096</td></tr>
+<tr><td>TABLE 109</td><td>TABLE 102</td><td>0,136</td></tr>
+<tr><td>TABLE 109</td><td>TABLE 103</td><td>0,050</td></tr>
+<tr><td>TABLE 109</td><td>TABLE 104</td><td>0,050</td></tr>
+<tr><td>TABLE 109</td><td>TABLE 105</td><td>0,076</td></tr>
+<tr><td>TABLE 109</td><td>TABLE 106</td><td>0,076</td></tr>
+<tr><td>TABLE 109</td><td>TABLE 107</td><td>0,076</td></tr>
+<tr><td>TABLE 109</td><td>TABLE 108</td><td>0,077</td></tr>
+<tr><td>TABLE 109</td><td>TABLE 109</td><td>0,000</td></tr>
+<tr><td>TABLE 109</td><td>TABLE 110</td><td>0,493</td></tr>
+<tr><td>TABLE 110</td><td>TABLE 101</td><td>0,467</td></tr>
+<tr><td>TABLE 110</td><td>TABLE 103</td><td>0,481</td></tr>
+<tr><td>TABLE 110</td><td>TABLE 104</td><td>0,481</td></tr>
+<tr><td>TABLE 110</td><td>TABLE 105</td><td>0,452</td></tr>
+<tr><td>TABLE 110</td><td>TABLE 106</td><td>0,452</td></tr>
+<tr><td>TABLE 110</td><td>TABLE 107</td><td>0,452</td></tr>
+<tr><td>TABLE 110</td><td>TABLE 108</td><td>0,462</td></tr>
+<tr><td>TABLE 110</td><td>TABLE 109</td><td>0,493</td></tr>
+<tr><td>TABLE 110</td><td>TABLE 110</td><td>0,000</td></tr>
+<tr><td>TABLE 111</td><td>TABLE 111</td><td>0,000</td></tr>
+<tr><td>TABLE 111</td><td>TABLE 112</td><td>0,104</td></tr>
+<tr><td>TABLE 111</td><td>TABLE 113</td><td>0,163</td></tr>
+<tr><td>TABLE 111</td><td>TABLE 114</td><td>0,151</td></tr>
+<tr><td>TABLE 111</td><td>TABLE 115</td><td>0,201</td></tr>
+<tr><td>TABLE 111</td><td>TABLE 116</td><td>0,144</td></tr>
+<tr><td>TABLE 111</td><td>TABLE 117</td><td>0,136</td></tr>
+<tr><td>TABLE 111</td><td>TABLE 118</td><td>0,146</td></tr>
+<tr><td>TABLE 111</td><td>TABLE 119</td><td>0,142</td></tr>
+<tr><td>TABLE 111</td><td>TABLE 120</td><td>0,097</td></tr>
+<tr><td>TABLE 112</td><td>TABLE 111</td><td>0,104</td></tr>
+<tr><td>TABLE 112</td><td>TABLE 112</td><td>0,000</td></tr>
+<tr><td>TABLE 112</td><td>TABLE 113</td><td>0,109</td></tr>
+<tr><td>TABLE 112</td><td>TABLE 114</td><td>0,188</td></tr>
+<tr><td>TABLE 112</td><td>TABLE 115</td><td>0,158</td></tr>
+<tr><td>TABLE 112</td><td>TABLE 116</td><td>0,170</td></tr>
+<tr><td>TABLE 112</td><td>TABLE 117</td><td>0,194</td></tr>
+<tr><td>TABLE 112</td><td>TABLE 118</td><td>0,164</td></tr>
+<tr><td>TABLE 112</td><td>TABLE 119</td><td>0,136</td></tr>
+<tr><td>TABLE 112</td><td>TABLE 120</td><td>0,056</td></tr>
+<tr><td>TABLE 113</td><td>TABLE 37</td><td>0,422</td></tr>
+<tr><td>TABLE 113</td><td>TABLE 63</td><td>0,466</td></tr>
+<tr><td>TABLE 113</td><td>TABLE 65</td><td>0,493</td></tr>
+<tr><td>TABLE 113</td><td>TABLE 68</td><td>0,482</td></tr>
+<tr><td>TABLE 113</td><td>TABLE 69</td><td>0,482</td></tr>
+<tr><td>TABLE 113</td><td>TABLE 70</td><td>0,482</td></tr>
+<tr><td>TABLE 113</td><td>TABLE 111</td><td>0,163</td></tr>
+<tr><td>TABLE 113</td><td>TABLE 112</td><td>0,109</td></tr>
+<tr><td>TABLE 113</td><td>TABLE 113</td><td>0,000</td></tr>
+<tr><td>TABLE 113</td><td>TABLE 114</td><td>0,181</td></tr>
+<tr><td>TABLE 113</td><td>TABLE 115</td><td>0,115</td></tr>
+<tr><td>TABLE 113</td><td>TABLE 116</td><td>0,194</td></tr>
+<tr><td>TABLE 113</td><td>TABLE 117</td><td>0,274</td></tr>
+<tr><td>TABLE 113</td><td>TABLE 118</td><td>0,225</td></tr>
+<tr><td>TABLE 113</td><td>TABLE 119</td><td>0,161</td></tr>
+<tr><td>TABLE 113</td><td>TABLE 120</td><td>0,102</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 37</td><td>0,447</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 63</td><td>0,418</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 64</td><td>0,459</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 65</td><td>0,425</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 68</td><td>0,412</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 69</td><td>0,412</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 70</td><td>0,412</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 111</td><td>0,151</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 112</td><td>0,188</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 113</td><td>0,181</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 114</td><td>0,000</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 115</td><td>0,258</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 116</td><td>0,176</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 117</td><td>0,189</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 118</td><td>0,208</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 119</td><td>0,237</td></tr>
+<tr><td>TABLE 114</td><td>TABLE 120</td><td>0,197</td></tr>
+<tr><td>TABLE 115</td><td>TABLE 37</td><td>0,434</td></tr>
+<tr><td>TABLE 115</td><td>TABLE 111</td><td>0,201</td></tr>
+<tr><td>TABLE 115</td><td>TABLE 112</td><td>0,158</td></tr>
+<tr><td>TABLE 115</td><td>TABLE 113</td><td>0,115</td></tr>
+<tr><td>TABLE 115</td><td>TABLE 114</td><td>0,258</td></tr>
+<tr><td>TABLE 115</td><td>TABLE 115</td><td>0,000</td></tr>
+<tr><td>TABLE 115</td><td>TABLE 116</td><td>0,194</td></tr>
+<tr><td>TABLE 115</td><td>TABLE 117</td><td>0,324</td></tr>
+<tr><td>TABLE 115</td><td>TABLE 118</td><td>0,270</td></tr>
+<tr><td>TABLE 115</td><td>TABLE 119</td><td>0,154</td></tr>
+<tr><td>TABLE 115</td><td>TABLE 120</td><td>0,125</td></tr>
+<tr><td>TABLE 116</td><td>TABLE 37</td><td>0,491</td></tr>
+<tr><td>TABLE 116</td><td>TABLE 63</td><td>0,491</td></tr>
+<tr><td>TABLE 116</td><td>TABLE 111</td><td>0,144</td></tr>
+<tr><td>TABLE 116</td><td>TABLE 112</td><td>0,170</td></tr>
+<tr><td>TABLE 116</td><td>TABLE 113</td><td>0,194</td></tr>
+<tr><td>TABLE 116</td><td>TABLE 114</td><td>0,176</td></tr>
+<tr><td>TABLE 116</td><td>TABLE 115</td><td>0,194</td></tr>
+<tr><td>TABLE 116</td><td>TABLE 116</td><td>0,000</td></tr>
+<tr><td>TABLE 116</td><td>TABLE 117</td><td>0,206</td></tr>
+<tr><td>TABLE 116</td><td>TABLE 118</td><td>0,200</td></tr>
+<tr><td>TABLE 116</td><td>TABLE 119</td><td>0,182</td></tr>
+<tr><td>TABLE 116</td><td>TABLE 120</td><td>0,163</td></tr>
+<tr><td>TABLE 117</td><td>TABLE 111</td><td>0,136</td></tr>
+<tr><td>TABLE 117</td><td>TABLE 112</td><td>0,194</td></tr>
+<tr><td>TABLE 117</td><td>TABLE 113</td><td>0,274</td></tr>
+<tr><td>TABLE 117</td><td>TABLE 114</td><td>0,189</td></tr>
+<tr><td>TABLE 117</td><td>TABLE 115</td><td>0,324</td></tr>
+<tr><td>TABLE 117</td><td>TABLE 116</td><td>0,206</td></tr>
+<tr><td>TABLE 117</td><td>TABLE 117</td><td>0,000</td></tr>
+<tr><td>TABLE 117</td><td>TABLE 118</td><td>0,152</td></tr>
+<tr><td>TABLE 117</td><td>TABLE 119</td><td>0,245</td></tr>
+<tr><td>TABLE 117</td><td>TABLE 120</td><td>0,215</td></tr>
+<tr><td>TABLE 118</td><td>TABLE 111</td><td>0,146</td></tr>
+<tr><td>TABLE 118</td><td>TABLE 112</td><td>0,164</td></tr>
+<tr><td>TABLE 118</td><td>TABLE 113</td><td>0,225</td></tr>
+<tr><td>TABLE 118</td><td>TABLE 114</td><td>0,208</td></tr>
+<tr><td>TABLE 118</td><td>TABLE 115</td><td>0,270</td></tr>
+<tr><td>TABLE 118</td><td>TABLE 116</td><td>0,200</td></tr>
+<tr><td>TABLE 118</td><td>TABLE 117</td><td>0,152</td></tr>
+<tr><td>TABLE 118</td><td>TABLE 118</td><td>0,000</td></tr>
+<tr><td>TABLE 118</td><td>TABLE 119</td><td>0,160</td></tr>
+<tr><td>TABLE 118</td><td>TABLE 120</td><td>0,173</td></tr>
+<tr><td>TABLE 119</td><td>TABLE 111</td><td>0,142</td></tr>
+<tr><td>TABLE 119</td><td>TABLE 112</td><td>0,136</td></tr>
+<tr><td>TABLE 119</td><td>TABLE 113</td><td>0,161</td></tr>
+<tr><td>TABLE 119</td><td>TABLE 114</td><td>0,237</td></tr>
+<tr><td>TABLE 119</td><td>TABLE 115</td><td>0,154</td></tr>
+<tr><td>TABLE 119</td><td>TABLE 116</td><td>0,182</td></tr>
+<tr><td>TABLE 119</td><td>TABLE 117</td><td>0,245</td></tr>
+<tr><td>TABLE 119</td><td>TABLE 118</td><td>0,160</td></tr>
+<tr><td>TABLE 119</td><td>TABLE 119</td><td>0,000</td></tr>
+<tr><td>TABLE 119</td><td>TABLE 120</td><td>0,101</td></tr>
+<tr><td>TABLE 120</td><td>TABLE 111</td><td>0,097</td></tr>
+<tr><td>TABLE 120</td><td>TABLE 112</td><td>0,056</td></tr>
+<tr><td>TABLE 120</td><td>TABLE 113</td><td>0,102</td></tr>
+<tr><td>TABLE 120</td><td>TABLE 114</td><td>0,197</td></tr>
+<tr><td>TABLE 120</td><td>TABLE 115</td><td>0,125</td></tr>
+<tr><td>TABLE 120</td><td>TABLE 116</td><td>0,163</td></tr>
+<tr><td>TABLE 120</td><td>TABLE 117</td><td>0,215</td></tr>
+<tr><td>TABLE 120</td><td>TABLE 118</td><td>0,173</td></tr>
+<tr><td>TABLE 120</td><td>TABLE 119</td><td>0,101</td></tr>
+<tr><td>TABLE 120</td><td>TABLE 120</td><td>0,000</td></tr>
+
+  
+
+
+</table>
+
+
+</body>
+</html>
