@@ -1,2 +1,1 @@
-# data-model-extension-impact-analysis-using-siamese-networks
-Data Model Extension Impact Analysis Using Siamese Networks
+# Data Model Extension Impact Analysis Using Siamese Networks study related files
